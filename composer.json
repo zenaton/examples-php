@@ -1,0 +1,9 @@
+{
+    "name": "tasky-io/examples-php",
+    "license": "Apache-2.0",
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=5.4.0",
+      "tasky-io/client-php": "master-dev"
+    }
+}
