@@ -1,6 +1,6 @@
 <?php
 
-use Tasky\Interfaces\TaskInterface;
+use Tasky\Common\Interfaces\TaskInterface;
 
 class SendWelcomeMail implements TaskInterface
 {

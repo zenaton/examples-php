@@ -1,8 +1,8 @@
 <?php
 
-use Tasky\Interfaces\WorkflowInterface;
-use Tasky\Tasks\Wait;
-use Tasky\Tasks\WaitWhile;
+use Tasky\Common\Interfaces\WorkflowInterface;
+use Tasky\Worker\Tasks\Wait;
+use Tasky\Worker\Tasks\WaitWhile;
 
 class WaitFlow implements WorkflowInterface
 {

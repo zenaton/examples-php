@@ -1,7 +1,7 @@
 <?php
 
-use Tasky\Interfaces\WorkflowInterface;
-use Tasky\Tasks\WaitWhile;
+use Tasky\Common\Interfaces\WorkflowInterface;
+use Tasky\Worker\Tasks\WaitWhile;
 
 class WaitWhileFlow implements WorkflowInterface
 {
@@ -12,7 +12,7 @@ class WaitWhileFlow implements WorkflowInterface
         execute((new WaitWhile(IncrementEvent::class))->seconds(10));
 
         $t = execute(new EchoDuration(3));
-        
+
         return $t;
     }
 }

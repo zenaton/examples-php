@@ -1,6 +1,6 @@
 <?php
 
-use Tasky\Interfaces\EventInterface;
+use Tasky\Common\Interfaces\EventInterface;
 
 class IncrementEvent implements EventInterface
 {

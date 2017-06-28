@@ -1,7 +1,7 @@
 <?php
 
-use Tasky\Interfaces\EventInterface;
-use Tasky\Interfaces\TaskInterface;
+use Tasky\Common\Interfaces\EventInterface;
+use Tasky\Common\Interfaces\TaskInterface;
 
 class EchoEvent implements TaskInterface
 {

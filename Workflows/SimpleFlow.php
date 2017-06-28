@@ -1,6 +1,6 @@
 <?php
 
-use Tasky\Interfaces\WorkflowInterface;
+use Tasky\Common\Interfaces\WorkflowInterface;
 
 class SimpleFlow implements WorkflowInterface
 {
@@ -20,6 +20,7 @@ class SimpleFlow implements WorkflowInterface
         // execute(new EchoDuration(1, 1));
         $t = execute(new GetTime());
         $n = $this->n;
+        // throw new Exception("Error Processing Request");
 
         while ($n < $this->max) {
             $t = execute(new EchoDuration($n, $t));

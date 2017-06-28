@@ -4,6 +4,7 @@
     "minimum-stability": "dev",
     "require": {
       "php": ">=5.4.0",
-      "tasky-io/client-php": "master-dev"
+      "tasky-io/worker-php": "dev-master",
+      "tasky-io/client-php": "dev-master"
     }
 }

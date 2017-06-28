@@ -1,6 +1,6 @@
 <?php
 
-use Tasky\Interfaces\WorkflowInterface;
+use Tasky\Common\Interfaces\WorkflowInterface;
 
 class AsyncFlow implements WorkflowInterface
 {

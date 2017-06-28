@@ -1,7 +1,7 @@
 <?php
 
-use Tasky\Interfaces\WorkflowInterface;
-use Tasky\Tasks\Wait;
+use Tasky\Common\Interfaces\WorkflowInterface;
+use Tasky\Worker\Tasks\Wait;
 
 class WelcomeFlow implements WorkflowInterface
 {

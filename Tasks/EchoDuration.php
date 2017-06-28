@@ -1,6 +1,6 @@
 <?php
 
-use Tasky\Interfaces\TaskInterface;
+use Tasky\Common\Interfaces\TaskInterface;
 
 class EchoDuration implements TaskInterface
 {
@@ -15,6 +15,8 @@ class EchoDuration implements TaskInterface
 
     public function handle()
     {
+        // throw new Exception("Error Processing Request", 1);
+        
         echo get_class($this).'('.$this->n.') '. $this->t;
         $t = microtime(true);
 

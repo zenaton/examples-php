@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/autoload.php';
 
-use Tasky\Client;
+use Tasky\Client\Client;
 
 $client = new Client($app_id, $api_token, $app_env);
 

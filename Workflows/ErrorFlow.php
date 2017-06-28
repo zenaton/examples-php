@@ -1,8 +1,8 @@
 <?php
 
-use Tasky\Exceptions\TaskyException;
-use Tasky\Interfaces\EventInterface;
-use Tasky\Interfaces\WorkflowInterface;
+use Tasky\Common\Exceptions\TaskyException;
+use Tasky\Common\Interfaces\EventInterface;
+use Tasky\Common\Interfaces\WorkflowInterface;
 use Tasky\Tasks\Wait;
 
 class ErrorFlow implements WorkflowInterface

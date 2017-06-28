@@ -1,8 +1,8 @@
 <?php
 
-use Tasky\Interfaces\EventInterface;
-use Tasky\Interfaces\WorkflowInterface;
-use Tasky\Tasks\Wait;
+use Tasky\Common\Interfaces\EventInterface;
+use Tasky\Common\Interfaces\WorkflowInterface;
+use Tasky\Common\Tasks\Wait;
 
 class EventFlow implements WorkflowInterface
 {
