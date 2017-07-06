@@ -1,10 +1,9 @@
 {
-    "name": "tasky-io/examples-php",
+    "name": "zenaton/examples-php",
     "license": "Apache-2.0",
     "minimum-stability": "dev",
     "require": {
       "php": ">=5.4.0",
-      "tasky-io/worker-php": "dev-dev",
-      "tasky-io/client-php": "dev-dev"
+      "zenaton/zenaton-php": "dev-staging"
     }
 }

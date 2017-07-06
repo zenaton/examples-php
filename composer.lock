@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b37886c8c1afcd2421b6d42a91e86b9a",
+    "content-hash": "4da53a6b9487e06afcbca8c950eaf6f5",
     "packages": [
         {
             "name": "jeremeamia/SuperClosure",
@@ -173,12 +173,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "7bfc320bda3ae64036ea6aafdcf7bcb37c2e9b6c"
+                "reference": "4a7d011317063c4763e06dc5f04ea3110eb8a92e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/7bfc320bda3ae64036ea6aafdcf7bcb37c2e9b6c",
-                "reference": "7bfc320bda3ae64036ea6aafdcf7bcb37c2e9b6c",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4a7d011317063c4763e06dc5f04ea3110eb8a92e",
+                "reference": "4a7d011317063c4763e06dc5f04ea3110eb8a92e",
                 "shasum": ""
             },
             "require": {
@@ -216,7 +216,180 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-06-03 13:25:50"
+            "time": "2017-06-28 21:12:13"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "symfony/console",
+            "version": "3.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "10537916d60d2affc5d4a6d04906f431af454f63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/10537916d60d2affc5d4a6d04906f431af454f63",
+                "reference": "10537916d60d2affc5d4a6d04906f431af454f63",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/debug": "~2.8|~3.0|~4.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.3",
+                "symfony/process": "<3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.3|~4.0",
+                "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+                "symfony/filesystem": "~2.8|~3.0|~4.0",
+                "symfony/http-kernel": "~2.8|~3.0|~4.0",
+                "symfony/process": "~3.3|~4.0"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/filesystem": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-03 13:31:36"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "3.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "296d63b9b2fbe8da9308713295543c08e93cc9cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/296d63b9b2fbe8da9308713295543c08e93cc9cf",
+                "reference": "296d63b9b2fbe8da9308713295543c08e93cc9cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "psr/log": "~1.0"
+            },
+            "conflict": {
+                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "~2.8|~3.0|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-06 13:36:30"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -391,12 +564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "58a4b77b90a12d53e8ecc2113b54bd266624dc84"
+                "reference": "eca09e9af11fe317f313d2915e1573a01609fcb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/58a4b77b90a12d53e8ecc2113b54bd266624dc84",
-                "reference": "58a4b77b90a12d53e8ecc2113b54bd266624dc84",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/eca09e9af11fe317f313d2915e1573a01609fcb9",
+                "reference": "eca09e9af11fe317f313d2915e1573a01609fcb9",
                 "shasum": ""
             },
             "require": {
@@ -405,11 +578,13 @@
             },
             "conflict": {
                 "symfony/config": "<2.8",
+                "symfony/dependency-injection": "<3.4",
                 "symfony/yaml": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.8|~3.0|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/intl": "^2.8.18|^3.2.5|~4.0",
                 "symfony/yaml": "~3.3|~4.0"
             },
@@ -448,112 +623,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-24 16:45:46"
-        },
-        {
-            "name": "tasky-io/client-php",
-            "version": "dev-staging",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tasky-io/client-php.git",
-                "reference": "42c992b42f9a40d475f18c3b829e3bee1d7cea66"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tasky-io/client-php/zipball/42c992b42f9a40d475f18c3b829e3bee1d7cea66",
-                "reference": "42c992b42f9a40d475f18c3b829e3bee1d7cea66",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "tasky-io/common-php": "dev-master"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tasky\\Client\\": "src/Tasky/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "time": "2017-06-22 16:03:29"
-        },
-        {
-            "name": "tasky-io/common-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tasky-io/common-php.git",
-                "reference": "f9fbbc5d97b6eeebf4a4a4b48474eb7e61af4b23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tasky-io/common-php/zipball/f9fbbc5d97b6eeebf4a4a4b48474eb7e61af4b23",
-                "reference": "f9fbbc5d97b6eeebf4a4a4b48474eb7e61af4b23",
-                "shasum": ""
-            },
-            "require": {
-                "jeremeamia/superclosure": "^2.0",
-                "nategood/httpful": "~0.2",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tasky\\Common\\": "src/Tasky/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "time": "2017-06-23 13:39:20"
-        },
-        {
-            "name": "tasky-io/worker-php",
-            "version": "dev-staging",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tasky-io/worker-php.git",
-                "reference": "8ebda33b2b0c3233a4971aa04cf49a11ea890733"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tasky-io/worker-php/zipball/8ebda33b2b0c3233a4971aa04cf49a11ea890733",
-                "reference": "8ebda33b2b0c3233a4971aa04cf49a11ea890733",
-                "shasum": ""
-            },
-            "require": {
-                "nesbot/carbon": "~1.22",
-                "php": ">=5.4.0",
-                "tasky-io/common-php": "dev-master",
-                "vlucas/phpdotenv": "^2.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tasky\\Worker\\": "src/Tasky/"
-                },
-                "files": [
-                    "scripts/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "time": "2017-06-22 16:03:13"
+            "time": "2017-07-06 06:49:25"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -604,14 +674,53 @@
                 "environment"
             ],
             "time": "2017-02-03 22:05:04"
+        },
+        {
+            "name": "zenaton/zenaton-php",
+            "version": "dev-staging",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenaton/zenaton-php.git",
+                "reference": "380a89e46bb402ff8cb8b680a96803cfc02fd342"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/380a89e46bb402ff8cb8b680a96803cfc02fd342",
+                "reference": "380a89e46bb402ff8cb8b680a96803cfc02fd342",
+                "shasum": ""
+            },
+            "require": {
+                "jeremeamia/superclosure": "^2.0",
+                "nategood/httpful": "~0.2",
+                "nesbot/carbon": "~1.22",
+                "php": ">=5.4.0",
+                "symfony/console": "^3.3",
+                "vlucas/phpdotenv": "^2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zenaton\\": "src/Zenaton/"
+                },
+                "files": [
+                    "src/Zenaton/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "time": "2017-07-06 15:13:48"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tasky-io/worker-php": 20,
-        "tasky-io/client-php": 20
+        "zenaton/zenaton-php": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
