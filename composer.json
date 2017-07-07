@@ -4,6 +4,6 @@
     "minimum-stability": "dev",
     "require": {
       "php": ">=5.4.0",
-      "zenaton/zenaton-php": "dev-staging"
+      "zenaton/zenaton-php": "dev-dev"
     }
 }
