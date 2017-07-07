@@ -14,6 +14,7 @@ class ReserveAir implements TaskInterface
     public function handle()
     {
         echo 'Reserving airline for Request ID: '. $this->booking->request_id .PHP_EOL;
+        sleep(rand(1,3));
         $this->booking->ticket_id = '154782684269';
         return $this->booking;
     }

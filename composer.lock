@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bde4f37ff0ff9f594c66b270df02398e",
+    "content-hash": "f1698ac008b7ce6056ff15abd1e79172",
     "packages": [
         {
             "name": "jeremeamia/SuperClosure",
@@ -677,16 +677,16 @@
         },
         {
             "name": "zenaton/zenaton-php",
-            "version": "dev-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "3b29e2732cc07ce3ca1924d26569fbee32248156"
+                "reference": "d164a88dbc6643d867a9ebddc28d5c3167e5189a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/3b29e2732cc07ce3ca1924d26569fbee32248156",
-                "reference": "3b29e2732cc07ce3ca1924d26569fbee32248156",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/d164a88dbc6643d867a9ebddc28d5c3167e5189a",
+                "reference": "d164a88dbc6643d867a9ebddc28d5c3167e5189a",
                 "shasum": ""
             },
             "require": {
@@ -713,7 +713,7 @@
             "license": [
                 "Apache-2.0"
             ],
-            "time": "2017-07-06 17:05:56"
+            "time": "2017-07-07 09:25:13"
         }
     ],
     "packages-dev": [],

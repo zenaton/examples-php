@@ -14,6 +14,7 @@ class ReserveCar implements TaskInterface
     public function handle()
     {
         echo 'Reserving car for Request ID: '. $this->booking->request_id .PHP_EOL;
+        sleep(rand(1,3));
         $this->booking->car_id = '154785236';
         return $this->booking;
     }

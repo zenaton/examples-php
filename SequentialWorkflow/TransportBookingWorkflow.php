@@ -2,7 +2,7 @@
 
 use Zenaton\Common\Interfaces\WorkflowInterface;
 
-class SequentialWorkflow implements WorkflowInterface
+class TransportBookingWorkflow implements WorkflowInterface
 {
     protected $booking;
 

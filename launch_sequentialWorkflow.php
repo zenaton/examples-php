@@ -14,6 +14,6 @@ $booking = (object)[
 ];
 
 
-$instance = $client->start(new SequentialWorkflow($booking));
+$instance = $client->start(new TransportBookingWorkflow($booking));
 $id = $instance->getId();
 echo 'launched! '. $id.PHP_EOL;

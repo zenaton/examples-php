@@ -4,7 +4,9 @@ require_once __DIR__.'/vendor/autoload.php';
 
 $classesDir = [
     __DIR__.'/SequentialWorkflow/',
-    __DIR__.'/ParallelWorkflow/'
+    __DIR__.'/ParallelWorkflow/',
+    __DIR__.'/AsynchronousWorkflow/',
+    __DIR__.'/EventWorkflow/'
 ];
 
 foreach ($classesDir as $directory) {

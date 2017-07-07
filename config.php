@@ -1,5 +1,5 @@
 <?php
 
-$app_id = 'CJXLYEBOQW';
-$app_env = 'staging';
-$api_token = 'oVJIKOViBYNPPJyc6ZvLE4dMSC26kYgjIb40UGsofaCg15ZsUNCtt57his2f';
+$app_id = 'WGNLHUVJPY';
+$app_env = 'production';
+$api_token = 'CfOb5SWI0BQfO0x7F4KgNktkFZKynqt8d8QF8nrpCfSml2XsHmFnkmUh3D9v';
