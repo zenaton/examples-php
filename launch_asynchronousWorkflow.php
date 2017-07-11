@@ -1,14 +1,9 @@
 <?php
 
-require_once __DIR__.'/autoload.php';
-
-use Zenaton\Client\Client;
-
-$client = new Client($app_id, $api_token, $app_env);
+require __DIR__.'/autoload.php';
+require __DIR__.'/client.php';
 
 $notifications = ['Gilles', 'Julien', 'Oussama', 'Alice', 'Charlotte', 'Balthazar', 'Annabelle', 'Louis'];
 
-
 $instance = $client->start(new SendInvitationsWorkflow($notifications));
-$id = $instance->getId();
-echo 'launched! '. $id.PHP_EOL;
+echo 'launched! '.$instance->getId().PHP_EOL;

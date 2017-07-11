@@ -4,6 +4,12 @@
     "minimum-stability": "dev",
     "require": {
       "php": ">=5.4.0",
-      "zenaton/zenaton-php": "dev-master"
+      "zenaton/zenaton-php": "dev-master",
+        "vlucas/phpdotenv": "^2.4@dev"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
     }
 }

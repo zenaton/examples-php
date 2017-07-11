@@ -1,19 +1,16 @@
 <?php
 
-require_once __DIR__.'/autoload.php';
+require __DIR__.'/autoload.php';
+require __DIR__.'/client.php';
 
-use Zenaton\Client\Client;
-
-$client = new Client($app_id, $api_token, $app_env);
-
-$item = (object)[
+$item = (object) [
     'name' => 'shirt',
 ];
 
-
 $instance = $client->start(new OrderWorkflow($item));
-$id = $instance->getId();
+echo 'launched! '.$instance->getId().PHP_EOL;
+
 sleep(2);
 
 $instance->sendEvent(new ModifyDeliveryInformation($newDeliveryInformation));
-echo 'launched! '. $id.PHP_EOL;
+echo 'event sent! '.PHP_EOL;
