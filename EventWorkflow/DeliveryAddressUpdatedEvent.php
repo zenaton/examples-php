@@ -2,9 +2,9 @@
 
 use Zenaton\Common\Interfaces\EventInterface;
 
-class ModifyDeliveryInformation implements EventInterface
+class DeliveryAddressUpdatedEvent implements EventInterface
 {
-    protected $address;
+    public $address;
 
     public function __construct($address)
     {

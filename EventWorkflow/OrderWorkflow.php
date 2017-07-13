@@ -7,11 +7,13 @@ class OrderWorkflow implements WorkflowInterface
 {
     protected $item;
     protected $address;
+    protected $cancelled;
 
     public function __construct($item, $address)
     {
         $this->item = $item;
         $this->address = $address;
+        $this->cancelled = false;
     }
 
     public function handle()
@@ -25,13 +27,13 @@ class OrderWorkflow implements WorkflowInterface
 
     public function onEvent(EventInterface $event)
     {
-        if ($event instanceof CancelOrderEvent) {
+        if ($event instanceof OrderCanceledEvent) {
             $this->cancelled = true;
-            executeAsync(new CancelOrderPrepation($this->item));
+            execute(new CancelOrder($this->item));
         }
 
-        if ($event instanceof ModifyDeliveryInformation) {
-            $this->adress = $event->adress;
+        if ($event instanceof DeliveryAddressUpdatedEvent) {
+            $this->address = $event->address;
         }
     }
 }
