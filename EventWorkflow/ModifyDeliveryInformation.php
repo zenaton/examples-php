@@ -4,10 +4,10 @@ use Zenaton\Common\Interfaces\EventInterface;
 
 class ModifyDeliveryInformation implements EventInterface
 {
-    protected $adress;
+    protected $address;
 
-    public function __construct($adress)
+    public function __construct($address)
     {
-        $this->adress = $adress;
+        $this->address = $address;
     }
 }

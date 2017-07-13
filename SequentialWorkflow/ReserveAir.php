@@ -4,18 +4,20 @@ use Zenaton\Common\Interfaces\TaskInterface;
 
 class ReserveAir implements TaskInterface
 {
-    protected $booking;
+    protected $request;
 
-    public function __construct($booking)
+    public function __construct($request)
     {
-        $this->booking = $booking;
+        $this->request = $request;
     }
 
     public function handle()
     {
-        echo 'Reserving airline for Request ID: '. $this->booking->request_id .PHP_EOL;
-        sleep(rand(1,3));
-        $this->booking->ticket_id = '154782684269';
-        return $this->booking;
+        echo 'Booking airline for Request ID: '.$this->request->id.PHP_EOL;
+        sleep(rand(1, 3));
+        $this->request->booking_id = '154782684269';
+        echo 'Ticket Booked: '.$this->request->booking_id.PHP_EOL;
+
+        return $this->request;
     }
 }

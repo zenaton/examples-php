@@ -3,12 +3,11 @@
 require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
-$booking = (object) [
-    'request_id' => '1234567890',
-    'customer_id' => '1234567891',
-    'reserve_car' => true,
-    'reserve_air' => true,
+$request = (object) [
+    'id' => '1234567890',
+    'customer_id' => '2DER45G',
+    'transport' => 'air',
 ];
 
-$instance = $client->start(new TransportBookingWorkflow($booking));
+$instance = $client->start(new TransportBookingWorkflow($request));
 echo 'launched! '.$instance->getId().PHP_EOL;

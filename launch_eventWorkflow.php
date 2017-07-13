@@ -3,14 +3,12 @@
 require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
-$item = (object) [
-    'name' => 'shirt',
-];
+$item = (object) ['name' => 'shirt'];
 
-$instance = $client->start(new OrderWorkflow($item));
+$instance = $client->start(new OrderWorkflow($item, '1600 Pennsylvania Ave NW, Washington, DC 20500, USA'));
 echo 'launched! '.$instance->getId().PHP_EOL;
 
 sleep(2);
 
-$instance->sendEvent(new ModifyDeliveryInformation($newDeliveryInformation));
+$instance->sendEvent(new ModifyDeliveryInformation('One Infinite Loop Cupertino, CA 95014'));
 echo 'event sent! '.PHP_EOL;

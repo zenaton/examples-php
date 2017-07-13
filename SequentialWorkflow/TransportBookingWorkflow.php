@@ -6,21 +6,21 @@ class TransportBookingWorkflow implements WorkflowInterface
 {
     protected $booking;
 
-    public function __construct($booking)
+    public function __construct($request)
     {
-        $this->booking = $booking;
+        $this->request = $request;
     }
 
     public function handle()
     {
-        if ($this->booking->reserve_air) {
-            $booking = execute(new ReserveAir($this->booking));
+        if ($this->request->transport === 'air') {
+            $request = execute(new ReserveAir($this->request));
         }
 
-        if ($this->booking->reserve_car) {
-            $booking = execute(new ReserveCar($booking));
+        if ($this->request->transport === 'car') {
+            $request = execute(new ReserveCar($this->request));
         }
 
-        execute(new SendConfirmation($booking));
+        execute(new SendConfirmation($request));
     }
 }
