@@ -8,6 +8,11 @@ $request = (object) [
     'customer_id' => '2DER45G',
     'transport' => 'air',
 ];
+$workflow = new TransportBookingWorkflow($request);
 
-$instance = $client->start(new TransportBookingWorkflow($request));
+// direct synchronous execution
+// $workflow->handle();
+
+// execution through Zenaton
+$instance = $client->start($workflow);
 echo 'launched! '.$instance->getId().PHP_EOL;
