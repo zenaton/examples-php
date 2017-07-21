@@ -2,7 +2,7 @@
 
 use Zenaton\Common\Interfaces\EventInterface;
 
-class DeliveryAddressUpdatedEvent implements EventInterface
+class AddressUpdatedEvent implements EventInterface
 {
     public $address;
 

@@ -4,11 +4,11 @@ require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
 $request = (object) [
-    'id' => '1234567890',
+    'id' => '12345',
     'customer_id' => '2DER45G',
-    'transport' => 'air',
+    'transport' => 'car',
 ];
-$workflow = new TransportBookingWorkflow($request);
+$workflow = new CarBookingWorkflow($request);
 
 // direct synchronous execution
 // $workflow->handle();

@@ -15,9 +15,5 @@ echo 'launched! '.$instance->getId().PHP_EOL;
 
 sleep(2);
 
-$instance->sendEvent(new DeliveryAddressUpdatedEvent('One Infinite Loop Cupertino, CA 95014'));
+$instance->sendEvent(new AddressUpdatedEvent('One Infinite Loop Cupertino, CA 95014'));
 echo 'event sent! '.PHP_EOL;
-
-// other possible event
-// $instance->sendEvent(new OrderCanceledEvent());
-// echo 'event sent! '.PHP_EOL;
