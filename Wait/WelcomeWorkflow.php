@@ -16,11 +16,11 @@ class WelcomeWorkflow implements WorkflowInterface
     {
         execute(new SendWelcomeEmail1($this->user->email));
 
-        execute((new Wait())->seconds(4));
+        execute((new Wait())->seconds(5));
 
         execute(new SendWelcomeEmail2($this->user->email));
 
-        execute((new Wait())->seconds(4));
+        execute((new Wait())->seconds(5));
 
         execute(new SendWelcomeEmail3($this->user->email));
     }

@@ -13,11 +13,10 @@ class BookCar implements TaskInterface
 
     public function handle()
     {
-        echo 'Booking car for Request ID: '.$this->request->id.PHP_EOL;
+        echo 'Booking car for Request ID: '.$this->request->id;
         sleep(rand(1, 3));
         $this->request->booking_id = 'QSFG34';
-        // throw new Exception('Error Processing Request', 1);
-        echo 'Car Booked: '.$this->request->booking_id.PHP_EOL;
+        echo '- car booked: '.$this->request->booking_id;
 
         return $this->request;
     }

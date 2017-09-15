@@ -14,23 +14,25 @@ class ActivationWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        execute(new SendActivateEmail1($this->user->email));
-        $event = execute((new Wait(UserActivatedEvent::class))->seconds(5));
-        if ($event) {
-            echo 'user activated at stage 1 - '.$event->action;
+        list($tmp, $event) = execute(
+            new SendActivateEmail1($this->user->email),
+            (new Wait(UserActivatedEvent::class))->seconds(5)
+        );
 
-            return;
+        if ($event) {
+            return execute(new LogActivateUser(1));
         }
 
-        execute(new SendActivateEmail2($this->user->email));
-        $event = execute((new Wait(UserActivatedEvent::class))->seconds(5));
-        if ($event) {
-            echo 'user activated at stage 2 - '.$event->action;
+        list($tmp, $event) = execute(
+            new SendActivateEmail2($this->user->email),
+            (new Wait(UserActivatedEvent::class))->seconds(5)
+        );
 
-            return;
+        if ($event) {
+            return execute(new LogActivateUser(2));
         }
 
-        echo 'We failed to activate user';
+        execute(new LogActivateUser(3));
     }
 
     public function getId()

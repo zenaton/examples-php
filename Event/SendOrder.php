@@ -17,6 +17,6 @@ class SendOrder implements TaskInterface
     {
         echo 'Sending '.$this->item->name.' to '.$this->address;
         sleep(rand(5, 10));
-        echo '- sent'.PHP_EOL;
+        echo '- sent';
     }
 }

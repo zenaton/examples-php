@@ -14,7 +14,7 @@ class RetentionWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        execute((new WaitWhile(UserRetentionEvent::class))->seconds(10));
+        execute((new WaitWhile(UserRetentionEvent::class))->seconds(5));
 
         execute(new SendRetentionEmail($this->user->email));
     }

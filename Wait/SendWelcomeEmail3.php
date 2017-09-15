@@ -13,8 +13,8 @@ class SendWelcomeEmail3 implements TaskInterface
 
     public function handle()
     {
-        echo 'Sending welcome email 3 to: '.$this->email.PHP_EOL;
+        echo 'Sending welcome email 3 to: '.$this->email;
         sleep(rand(1, 3));
-        echo '- email 3 sent'.PHP_EOL;
+        echo '- email 3 sent';
     }
 }

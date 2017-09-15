@@ -27,4 +27,9 @@ class OrderWorkflow implements WorkflowInterface
             $this->address = $event->address;
         }
     }
+
+    public function getId()
+    {
+        return $this->item->orderId;
+    }
 }

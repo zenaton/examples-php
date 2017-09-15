@@ -5,11 +5,16 @@
     "require": {
       "php": ">=5.4.0",
       "zenaton/zenaton-php": "dev-master",
-        "vlucas/phpdotenv": "^2.4@dev"
+      "vlucas/phpdotenv": "^2.4@dev"
     },
     "scripts": {
         "post-install-cmd": [
-            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ]
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@installZenatonScript"
+        ],
+        "post-update-cmd": [
+            "@installZenatonScript"
+        ],
+        "installZenatonScript": "cp -f ./vendor/zenaton/zenaton-php/zenaton .; chmod +x ./zenaton"
     }
 }

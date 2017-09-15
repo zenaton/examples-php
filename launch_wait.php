@@ -3,12 +3,9 @@
 require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
-$user = (object) ['email' => 'user@yoursite.com'];
-$workflow = new WelcomeWorkflow($user);
+$workflow = new WelcomeWorkflow(
+    (object) ['email' => 'user@yoursite.com']
+);
 
-// direct synchronous execution
-// $workflow->handle();
-
-// execution through Zenaton
-$instance = $client->start($workflow);
-echo 'launched! '.$instance->getId().PHP_EOL;
+$client->start($workflow);
+echo 'launched! '.PHP_EOL;

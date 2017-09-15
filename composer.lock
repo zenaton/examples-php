@@ -62,7 +62,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2017-06-23 22:47:24"
+            "time": "2017-06-23T22:47:24+00:00"
         },
         {
             "name": "nategood/httpful",
@@ -165,7 +165,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-02-06 22:02:47"
+            "time": "2017-02-06T22:02:47+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -173,12 +173,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "4a7d011317063c4763e06dc5f04ea3110eb8a92e"
+                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4a7d011317063c4763e06dc5f04ea3110eb8a92e",
-                "reference": "4a7d011317063c4763e06dc5f04ea3110eb8a92e",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a1e8e1a30e1352f118feff1a8481066ddc2f234a",
+                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a",
                 "shasum": ""
             },
             "require": {
@@ -216,7 +216,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-06-28 21:12:13"
+            "time": "2017-09-02T17:10:46+00:00"
         },
         {
             "name": "psr/log",
@@ -263,7 +263,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "symfony/console",
@@ -271,16 +271,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "10537916d60d2affc5d4a6d04906f431af454f63"
+                "reference": "d0fc29c14e486837da0f0734c3388a5761dd8ae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/10537916d60d2affc5d4a6d04906f431af454f63",
-                "reference": "10537916d60d2affc5d4a6d04906f431af454f63",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d0fc29c14e486837da0f0734c3388a5761dd8ae4",
+                "reference": "d0fc29c14e486837da0f0734c3388a5761dd8ae4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/debug": "~2.8|~3.0|~4.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
@@ -293,14 +293,13 @@
                 "symfony/config": "~3.3|~4.0",
                 "symfony/dependency-injection": "~3.3|~4.0",
                 "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
-                "symfony/filesystem": "~2.8|~3.0|~4.0",
-                "symfony/http-kernel": "~2.8|~3.0|~4.0",
+                "symfony/lock": "~3.4|~4.0",
                 "symfony/process": "~3.3|~4.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
+                "symfony/lock": "",
                 "symfony/process": ""
             },
             "type": "library",
@@ -333,7 +332,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-03 13:31:36"
+            "time": "2017-09-15T10:12:22+00:00"
         },
         {
             "name": "symfony/debug",
@@ -341,12 +340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "15b0a06a42dc611cebc03f8dc4bff180d95421c7"
+                "reference": "70e9d372ae2e5daf8d36002e7655c288546f9428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/15b0a06a42dc611cebc03f8dc4bff180d95421c7",
-                "reference": "15b0a06a42dc611cebc03f8dc4bff180d95421c7",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/70e9d372ae2e5daf8d36002e7655c288546f9428",
+                "reference": "70e9d372ae2e5daf8d36002e7655c288546f9428",
                 "shasum": ""
             },
             "require": {
@@ -389,7 +388,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-06 13:37:40"
+            "time": "2017-09-15T10:16:43+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -448,7 +447,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14 15:44:48"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -504,7 +503,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14 15:44:48"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "symfony/polyfill-util",
@@ -512,12 +511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "5d2fc887042ffa5617c28d362f0f114a4c6048bf"
+                "reference": "67925d1cf0b84bd234a83bebf26d4eb281744c6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/5d2fc887042ffa5617c28d362f0f114a4c6048bf",
-                "reference": "5d2fc887042ffa5617c28d362f0f114a4c6048bf",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/67925d1cf0b84bd234a83bebf26d4eb281744c6d",
+                "reference": "67925d1cf0b84bd234a83bebf26d4eb281744c6d",
                 "shasum": ""
             },
             "require": {
@@ -556,7 +555,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2017-06-14 15:44:48"
+            "time": "2017-07-05T15:09:33+00:00"
         },
         {
             "name": "symfony/translation",
@@ -564,16 +563,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "eca09e9af11fe317f313d2915e1573a01609fcb9"
+                "reference": "936bf6dc8955de486d11deebd26aa938322b1555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/eca09e9af11fe317f313d2915e1573a01609fcb9",
-                "reference": "eca09e9af11fe317f313d2915e1573a01609fcb9",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/936bf6dc8955de486d11deebd26aa938322b1555",
+                "reference": "936bf6dc8955de486d11deebd26aa938322b1555",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
@@ -585,6 +584,7 @@
                 "psr/log": "~1.0",
                 "symfony/config": "~2.8|~3.0|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/finder": "~2.8|~3.0|~4.0",
                 "symfony/intl": "^2.8.18|^3.2.5|~4.0",
                 "symfony/yaml": "~3.3|~4.0"
             },
@@ -623,7 +623,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-06 06:49:25"
+            "time": "2017-09-15T10:12:22+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -631,12 +631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "7ac2c1cef304f5bd5a8d40750fbcbdd49333b9e5"
+                "reference": "3dd3d8f90e6604e75cca48ec32b033b50b05135b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/7ac2c1cef304f5bd5a8d40750fbcbdd49333b9e5",
-                "reference": "7ac2c1cef304f5bd5a8d40750fbcbdd49333b9e5",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3dd3d8f90e6604e75cca48ec32b033b50b05135b",
+                "reference": "3dd3d8f90e6604e75cca48ec32b033b50b05135b",
                 "shasum": ""
             },
             "require": {
@@ -673,7 +673,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2017-02-03 22:05:04"
+            "time": "2017-08-08T20:02:34+00:00"
         },
         {
             "name": "zenaton/zenaton-php",
@@ -681,12 +681,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "7a0fd3213bc1793696cc732f6b303b1363951b6d"
+                "reference": "7b14256c8b6e02f4bcda324aa13323012c764d00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/7a0fd3213bc1793696cc732f6b303b1363951b6d",
-                "reference": "7a0fd3213bc1793696cc732f6b303b1363951b6d",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/7b14256c8b6e02f4bcda324aa13323012c764d00",
+                "reference": "7b14256c8b6e02f4bcda324aa13323012c764d00",
                 "shasum": ""
             },
             "require": {
@@ -713,7 +713,8 @@
             "license": [
                 "Apache-2.0"
             ],
-            "time": "2017-07-11 09:33:21"
+            "description": "Zenaton PHP library",
+            "time": "2017-09-14T16:47:17+00:00"
         }
     ],
     "packages-dev": [],

@@ -2,7 +2,7 @@
 
 use Zenaton\Common\Interfaces\WorkflowInterface;
 
-class ParallelWorkflow implements WorkflowInterface
+class OrderFromProviderWorkflow implements WorkflowInterface
 {
     protected $item;
 
