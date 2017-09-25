@@ -7,8 +7,8 @@ $workflow = new RetentionWorkflow(
     (object) ['email' => 'user@yoursite.com']
 );
 
-$instance = $client->start($workflow);
-echo 'launched! '.PHP_EOL;
+$response = $client->start($workflow);
+echo json_encode($response).PHP_EOL;
 
 sleep(2);
 $instance = $client->find(RetentionWorkflow::class)->byId('user@yoursite.com');

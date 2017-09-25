@@ -7,5 +7,5 @@ $workflow = new WelcomeWorkflow(
     (object) ['email' => 'user@yoursite.com']
 );
 
-$client->start($workflow);
-echo 'launched! '.PHP_EOL;
+$response = $client->start($workflow);
+echo json_encode($response).PHP_EOL;

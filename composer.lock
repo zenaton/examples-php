@@ -271,12 +271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d0fc29c14e486837da0f0734c3388a5761dd8ae4"
+                "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d0fc29c14e486837da0f0734c3388a5761dd8ae4",
-                "reference": "d0fc29c14e486837da0f0734c3388a5761dd8ae4",
+                "url": "https://api.github.com/repos/symfony/console/zipball/90e1e8682abc51dbf679ef3cdc304424a3075f2f",
+                "reference": "90e1e8682abc51dbf679ef3cdc304424a3075f2f",
                 "shasum": ""
             },
             "require": {
@@ -285,13 +285,13 @@
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3",
+                "symfony/dependency-injection": "<3.4",
                 "symfony/process": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.3|~4.0",
-                "symfony/dependency-injection": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
                 "symfony/lock": "~3.4|~4.0",
                 "symfony/process": "~3.3|~4.0"
@@ -332,36 +332,36 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:12:22+00:00"
+            "time": "2017-09-19T09:28:48+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "dev-master",
+            "version": "3.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "70e9d372ae2e5daf8d36002e7655c288546f9428"
+                "reference": "24964d26e28a77b027c38f4d8208ef714221718a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/70e9d372ae2e5daf8d36002e7655c288546f9428",
-                "reference": "70e9d372ae2e5daf8d36002e7655c288546f9428",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/24964d26e28a77b027c38f4d8208ef714221718a",
+                "reference": "24964d26e28a77b027c38f4d8208ef714221718a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": "^5.5.9|>=7.0.8",
                 "psr/log": "~1.0"
             },
             "conflict": {
-                "symfony/http-kernel": "<3.4"
+                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "symfony/http-kernel": "~3.4|~4.0"
+                "symfony/http-kernel": "~2.8|~3.0|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -388,7 +388,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-15T10:16:43+00:00"
+            "time": "2017-09-15T10:58:45+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -681,12 +681,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "7b14256c8b6e02f4bcda324aa13323012c764d00"
+                "reference": "955a095845e01e8caf826adf0e96c2aa20de3cad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/7b14256c8b6e02f4bcda324aa13323012c764d00",
-                "reference": "7b14256c8b6e02f4bcda324aa13323012c764d00",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/955a095845e01e8caf826adf0e96c2aa20de3cad",
+                "reference": "955a095845e01e8caf826adf0e96c2aa20de3cad",
                 "shasum": ""
             },
             "require": {
@@ -714,7 +714,7 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2017-09-14T16:47:17+00:00"
+            "time": "2017-09-25 06:54:42"
         }
     ],
     "packages-dev": [],
