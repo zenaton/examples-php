@@ -15,8 +15,8 @@ class ActivationWorkflow implements WorkflowInterface
     public function handle()
     {
         list($tmp, $event) = execute(
-            new SendActivateEmail1($this->user->email),
-            (new Wait(UserActivatedEvent::class))->seconds(5)
+            new SendActivateEmail1($this->user['email']),
+            (new Wait(UserActivatedEvent::class))->seconds(4)
         );
 
         if ($event) {
@@ -24,8 +24,8 @@ class ActivationWorkflow implements WorkflowInterface
         }
 
         list($tmp, $event) = execute(
-            new SendActivateEmail2($this->user->email),
-            (new Wait(UserActivatedEvent::class))->seconds(5)
+            new SendActivateEmail2($this->user['email']),
+            (new Wait(UserActivatedEvent::class))->seconds(4)
         );
 
         if ($event) {
@@ -37,6 +37,6 @@ class ActivationWorkflow implements WorkflowInterface
 
     public function getId()
     {
-        return $this->user->email;
+        return $this->user['email'];
     }
 }

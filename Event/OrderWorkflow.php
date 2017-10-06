@@ -30,6 +30,6 @@ class OrderWorkflow implements WorkflowInterface
 
     public function getId()
     {
-        return $this->item->orderId;
+        return $this->item['orderId'];
     }
 }

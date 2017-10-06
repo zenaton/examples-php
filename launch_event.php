@@ -3,7 +3,7 @@
 require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
-$item = (object) ['name' => 'shirt', 'orderId' => '314159'];
+$item = ['name' => 'shirt', 'orderId' => '314159'];
 $workflow = new OrderWorkflow($item, '1600 Pennsylvania Ave NW, Washington, DC 20500, USA');
 
 $response = $client->start($workflow);

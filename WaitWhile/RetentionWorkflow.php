@@ -16,11 +16,11 @@ class RetentionWorkflow implements WorkflowInterface
     {
         execute((new WaitWhile(UserRetentionEvent::class))->seconds(5));
 
-        execute(new SendRetentionEmail($this->user->email));
+        execute(new SendRetentionEmail($this->user['email']));
     }
 
     public function getId()
     {
-        return $this->user->email;
+        return $this->user['email'];
     }
 }

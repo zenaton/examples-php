@@ -14,14 +14,14 @@ class WelcomeWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        execute(new SendWelcomeEmail1($this->user->email));
+        execute(new SendWelcomeEmail1($this->user['email']));
 
         execute((new Wait())->seconds(5));
 
-        execute(new SendWelcomeEmail2($this->user->email));
+        execute(new SendWelcomeEmail2($this->user['email']));
 
         execute((new Wait())->seconds(5));
 
-        execute(new SendWelcomeEmail3($this->user->email));
+        execute(new SendWelcomeEmail3($this->user['email']));
     }
 }

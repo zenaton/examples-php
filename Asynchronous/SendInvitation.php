@@ -15,7 +15,7 @@ class SendInvitation implements TaskInterface
     {
         // Fake API request to send invitation
         echo 'Sending Invitation to: '.$this->name;
-        sleep(rand(1, 3));
+        sleep(2);
         echo '- invitation sent to '.$this->name;
     }
 }

@@ -4,7 +4,7 @@ use Zenaton\Common\Interfaces\WorkflowInterface;
 
 class CarBookingWorkflow implements WorkflowInterface
 {
-    protected $booking;
+    protected $request;
 
     public function __construct($request)
     {
