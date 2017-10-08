@@ -15,7 +15,7 @@ class GetPriceFromProviderA implements TaskInterface
     {
         // Fake API request to get price from provider A
         echo 'Contacting provider A to get the price...';
-        sleep(rand(5, 10));
+        sleep(2);
         $price = rand(80, 100);
         echo '- price from Provider A is: '.$price;
 

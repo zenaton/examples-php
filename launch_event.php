@@ -10,7 +10,7 @@ $response = $client->start($workflow);
 echo json_encode($response).PHP_EOL;
 sleep(2);
 
-$instance = $client->find(OrderWorkflow::class)->byId($item->orderId);
+$instance = $client->find(OrderWorkflow::class)->byId($item['orderId']);
 
 $res = $instance->sendEvent(new AddressUpdatedEvent('One Infinite Loop Cupertino, CA 95014'));
 echo json_encode($res).PHP_EOL;
