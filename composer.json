@@ -9,12 +9,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@installZenatonScript"
-        ],
-        "post-update-cmd": [
-            "@installZenatonScript"
-        ],
-        "installZenatonScript": "cp -f ./vendor/zenaton/zenaton-php/zenaton .; chmod +x ./zenaton"
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
     }
 }
