@@ -216,7 +216,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-10-01 14:54:43"
+            "time": "2017-10-01T14:54:43+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -224,12 +224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
                 "shasum": ""
             },
             "require": {
@@ -241,7 +241,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -275,7 +275,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -283,12 +283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php56.git",
-                "reference": "e85ebdef569b84e8709864e1a290c40f156b30ca"
+                "reference": "265fc96795492430762c29be291a371494ba3a5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/e85ebdef569b84e8709864e1a290c40f156b30ca",
-                "reference": "e85ebdef569b84e8709864e1a290c40f156b30ca",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/265fc96795492430762c29be291a371494ba3a5b",
+                "reference": "265fc96795492430762c29be291a371494ba3a5b",
                 "shasum": ""
             },
             "require": {
@@ -298,7 +298,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -331,7 +331,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "symfony/polyfill-util",
@@ -339,12 +339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "67925d1cf0b84bd234a83bebf26d4eb281744c6d"
+                "reference": "6e719200c8e540e0c0effeb31f96bdb344b94176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/67925d1cf0b84bd234a83bebf26d4eb281744c6d",
-                "reference": "67925d1cf0b84bd234a83bebf26d4eb281744c6d",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/6e719200c8e540e0c0effeb31f96bdb344b94176",
+                "reference": "6e719200c8e540e0c0effeb31f96bdb344b94176",
                 "shasum": ""
             },
             "require": {
@@ -353,7 +353,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -383,7 +383,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2017-07-05T15:09:33+00:00"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "symfony/translation",
@@ -391,12 +391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "5c94827634a3fcde98ea78b5a011f3228b343269"
+                "reference": "24110f6b3f3fe5f9caa2a65bd3b8cba5f25be185"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/5c94827634a3fcde98ea78b5a011f3228b343269",
-                "reference": "5c94827634a3fcde98ea78b5a011f3228b343269",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/24110f6b3f3fe5f9caa2a65bd3b8cba5f25be185",
+                "reference": "24110f6b3f3fe5f9caa2a65bd3b8cba5f25be185",
                 "shasum": ""
             },
             "require": {
@@ -451,7 +451,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-05 10:20:28"
+            "time": "2017-10-13T13:33:47+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -459,12 +459,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "3dd3d8f90e6604e75cca48ec32b033b50b05135b"
+                "reference": "828d19e597052ddeee65890bb2b1a0912d79fea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3dd3d8f90e6604e75cca48ec32b033b50b05135b",
-                "reference": "3dd3d8f90e6604e75cca48ec32b033b50b05135b",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/828d19e597052ddeee65890bb2b1a0912d79fea8",
+                "reference": "828d19e597052ddeee65890bb2b1a0912d79fea8",
                 "shasum": ""
             },
             "require": {
@@ -476,7 +476,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -501,7 +501,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2017-08-08T20:02:34+00:00"
+            "time": "2017-10-10T06:32:45+00:00"
         },
         {
             "name": "zenaton/zenaton-php",
@@ -509,12 +509,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "e7e3dc82f4200d4fab6567ef8ede6a7f8e42b828"
+                "reference": "25ef0ab48b5ffc1a4d51885a7a1a5ed3150d19c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/e7e3dc82f4200d4fab6567ef8ede6a7f8e42b828",
-                "reference": "e7e3dc82f4200d4fab6567ef8ede6a7f8e42b828",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/25ef0ab48b5ffc1a4d51885a7a1a5ed3150d19c3",
+                "reference": "25ef0ab48b5ffc1a4d51885a7a1a5ed3150d19c3",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +541,7 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2017-10-08 23:14:20"
+            "time": "2017-10-17T09:51:10+00:00"
         }
     ],
     "packages-dev": [],
