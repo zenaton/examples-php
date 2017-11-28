@@ -12,6 +12,7 @@ $classesDir = [
     __DIR__.'/Event',
     __DIR__.'/Parallel',
     __DIR__.'/Sequential',
+    __DIR__.'/Version',
     __DIR__.'/Wait',
     __DIR__.'/WaitEvent',
     __DIR__.'/WaitWhile',
