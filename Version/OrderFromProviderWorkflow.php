@@ -6,12 +6,12 @@ use Zenaton\Worker\Version;
 
 class OrderFromProviderWorkflow extends Version
 {
-    protected function current()
+    public function current()
     {
         return OrderFromProviderWorkflow_v1::class;
     }
 
-    protected function first()
+    public function initial()
     {
         return OrderFromProviderWorkflow_v0::class;
     }
