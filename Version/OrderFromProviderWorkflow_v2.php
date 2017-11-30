@@ -7,6 +7,10 @@ use Zenaton\Common\Interfaces\WorkflowInterface;
 class OrderFromProviderWorkflow_v2 implements WorkflowInterface
 {
     protected $item;
+    protected $priceA;
+    protected $priceB;
+    protected $priceC;
+    protected $priceD;
 
     public function __construct($item)
     {
@@ -15,14 +19,17 @@ class OrderFromProviderWorkflow_v2 implements WorkflowInterface
 
     public function handle()
     {
-        list($priceA, $priceB, $priceC, $priceD) = execute(
+        list($this->priceA, $this->priceB, $this->priceC, $this->priceD) = execute(
             new GetPriceFromProviderA($this->item, 2),
             new GetPriceFromProviderB($this->item, 2),
             new GetPriceFromProviderC($this->item, 2),
             new GetPriceFromProviderD($this->item, 2)
         );
 
-        switch (array_keys([$priceA, $priceB, $priceC, $priceD], min($priceA, $priceB, $priceC, $priceD))[0]) {
+        switch (array_keys(
+            [$this->priceA, $this->priceB, $this->priceC, $this->priceD],
+            min($this->priceA, $this->priceB, $this->priceC, $this->priceD)
+        )[0]) {
             case 0:
                 execute(new OrderFromProviderA($this->item, 2));
                 break;
@@ -36,5 +43,10 @@ class OrderFromProviderWorkflow_v2 implements WorkflowInterface
                 execute(new OrderFromProviderD($this->item, 2));
                 break;
         }
+    }
+
+    public function getId()
+    {
+        return "2";
     }
 }
