@@ -28,4 +28,9 @@ class OrderFromProviderWorkflow_v0 implements WorkflowInterface
             execute(new OrderFromProviderB($this->item, 0));
         }
     }
+
+    public function getId()
+    {
+        return $this->item['name'];
+    }
 }

@@ -44,4 +44,9 @@ class OrderFromProviderWorkflow_v2 implements WorkflowInterface
                 break;
         }
     }
+
+    public function getId()
+    {
+        return $this->item['name'];
+    }
 }

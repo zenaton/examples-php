@@ -9,3 +9,7 @@ $workflow = new Version\OrderFromProviderWorkflow(
 
 $response = $client->start($workflow);
 echo json_encode($response).PHP_EOL;
+
+$instance = $client->find('Version\OrderFromProviderWorkflow')->byId('shirt');
+sleep(5);
+var_dump($instance->getProperties());
