@@ -1,6 +1,6 @@
 <?php
 
-use Zenaton\Common\Interfaces\TaskInterface;
+use Zenaton\Interfaces\TaskInterface;
 
 class SendActivateEmail2 implements TaskInterface
 {

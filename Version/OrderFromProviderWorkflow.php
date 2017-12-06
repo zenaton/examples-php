@@ -2,7 +2,7 @@
 
 namespace Version;
 
-use Zenaton\Worker\Version;
+use Zenaton\Workflows\Version;
 
 class OrderFromProviderWorkflow extends Version
 {

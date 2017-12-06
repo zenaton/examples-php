@@ -1,6 +1,6 @@
 <?php
 
-use Zenaton\Common\Interfaces\EventInterface;
+use Zenaton\Interfaces\EventInterface;
 
 class UserActivatedEvent implements EventInterface
 {

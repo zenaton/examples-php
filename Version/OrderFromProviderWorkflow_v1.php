@@ -2,7 +2,7 @@
 
 namespace Version;
 
-use Zenaton\Common\Interfaces\WorkflowInterface;
+use Zenaton\Interfaces\WorkflowInterface;
 
 class OrderFromProviderWorkflow_v1 implements WorkflowInterface
 {
@@ -38,10 +38,5 @@ class OrderFromProviderWorkflow_v1 implements WorkflowInterface
                 execute(new OrderFromProviderC($this->item, 1));
                 break;
         }
-    }
-
-    public function getId()
-    {
-        return "1";
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
-use Zenaton\Common\Interfaces\WorkflowInterface;
-use Zenaton\Common\Interfaces\EventInterface;
+use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Interfaces\EventInterface;
 
 class OrderWorkflow implements WorkflowInterface
 {

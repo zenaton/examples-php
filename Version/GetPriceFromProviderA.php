@@ -2,7 +2,7 @@
 
 namespace Version;
 
-use Zenaton\Common\Interfaces\TaskInterface;
+use Zenaton\Interfaces\TaskInterface;
 
 class GetPriceFromProviderA implements TaskInterface
 {

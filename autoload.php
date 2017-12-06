@@ -2,10 +2,10 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-if (!class_exists('Zenaton\Worker\Workflow')) {
-    echo "Please run 'composer install' before launching an example";
-    die();
-}
+// if (!class_exists('Zenaton\Worker\Workflow')) {
+//     echo "Please run 'composer install' before launching an example";
+//     die();
+// }
 
 $classesDir = [
     __DIR__.'/Asynchronous',

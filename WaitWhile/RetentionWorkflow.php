@@ -1,7 +1,7 @@
 <?php
 
-use Zenaton\Common\Interfaces\WorkflowInterface;
-use Zenaton\Worker\Tasks\WaitWhile;
+use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Tasks\WaitWhile;
 
 class RetentionWorkflow implements WorkflowInterface
 {

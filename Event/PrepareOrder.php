@@ -1,6 +1,6 @@
 <?php
 
-use Zenaton\Common\Interfaces\TaskInterface;
+use Zenaton\Interfaces\TaskInterface;
 
 class PrepareOrder implements TaskInterface
 {
@@ -14,7 +14,7 @@ class PrepareOrder implements TaskInterface
     public function handle()
     {
         echo 'Preparing order for item: '.$this->item['name'];
-        sleep(rand(5, 10));
+        sleep(10);
         echo '- order prepared';
     }
 }

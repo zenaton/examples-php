@@ -1,6 +1,6 @@
 <?php
 
-use Zenaton\Common\Interfaces\TaskInterface;
+use Zenaton\Interfaces\TaskInterface;
 
 class GetPriceFromProviderB implements TaskInterface
 {
@@ -15,7 +15,7 @@ class GetPriceFromProviderB implements TaskInterface
     {
         // Fake API request to get price from provider B
         echo 'Contacting provider B to get the price...';
-        sleep(2);
+        sleep(20);
         $price = rand(80, 100);
         echo '- price from Provider B is: '.$price;
 

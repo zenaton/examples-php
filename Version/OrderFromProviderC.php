@@ -2,7 +2,7 @@
 
 namespace Version;
 
-use Zenaton\Common\Interfaces\TaskInterface;
+use Zenaton\Interfaces\TaskInterface;
 
 class OrderFromProviderC implements TaskInterface
 {

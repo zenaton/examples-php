@@ -8,7 +8,7 @@ $workflow = new OrderWorkflow($item, '1600 Pennsylvania Ave NW, Washington, DC 2
 
 $response = $client->start($workflow);
 echo json_encode($response).PHP_EOL;
-sleep(2);
+sleep(5);
 
 $instance = $client->find(OrderWorkflow::class)->byId($item['orderId']);
 

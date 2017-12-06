@@ -1,7 +1,8 @@
 <?php
 
-use Zenaton\Common\Interfaces\WorkflowInterface;
-use Zenaton\Worker\Tasks\Wait;
+use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Tasks\Wait;
+use Carbon\Carbon;
 
 class WelcomeWorkflow implements WorkflowInterface
 {

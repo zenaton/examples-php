@@ -7,7 +7,5 @@ $workflow = new Version\OrderFromProviderWorkflow(
     ['name' => 'shirt']
 );
 
-$workflow->setVersion(1);
-
 $response = $client->start($workflow);
 echo json_encode($response).PHP_EOL;

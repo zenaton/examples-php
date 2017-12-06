@@ -1,6 +1,6 @@
 <?php
 
-use Zenaton\Common\Interfaces\WorkflowInterface;
+use Zenaton\Interfaces\WorkflowInterface;
 
 class CarBookingWorkflow implements WorkflowInterface
 {
