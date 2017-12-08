@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class BookCar implements TaskInterface
 {
+    use Zenatonable;
+
     protected $request;
 
     public function __construct($request)

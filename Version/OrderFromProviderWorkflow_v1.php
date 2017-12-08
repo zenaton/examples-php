@@ -3,9 +3,12 @@
 namespace Version;
 
 use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Traits\Zenatonable;
 
 class OrderFromProviderWorkflow_v1 implements WorkflowInterface
 {
+    use Zenatonable;
+
     protected $item;
     protected $priceA;
     protected $priceB;
@@ -18,24 +21,24 @@ class OrderFromProviderWorkflow_v1 implements WorkflowInterface
 
     public function handle()
     {
-        list($this->priceA, $this->priceB, $this->priceC) = execute(
+        list($this->priceA, $this->priceB, $this->priceC) = parallel(
             new GetPriceFromProviderA($this->item, 1),
             new GetPriceFromProviderB($this->item, 1),
             new GetPriceFromProviderC($this->item, 1)
-        );
+        )->execute();
 
         switch (array_keys(
             [$this->priceA, $this->priceB, $this->priceC],
             min($this->priceA, $this->priceB, $this->priceC)
         )[0]) {
             case 0:
-                execute(new OrderFromProviderA($this->item, 1));
+                (new OrderFromProviderA($this->item, 1))->execute();
                 break;
             case 1:
-                execute(new OrderFromProviderB($this->item, 1));
+                (new OrderFromProviderB($this->item, 1))->execute();
                 break;
             case 2:
-                execute(new OrderFromProviderC($this->item, 1));
+                (new OrderFromProviderC($this->item, 1))->execute();
                 break;
         }
     }

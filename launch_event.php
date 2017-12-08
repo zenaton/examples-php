@@ -3,14 +3,14 @@
 require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
-$item = ['name' => 'shirt', 'orderId' => '314159'];
-$workflow = new OrderWorkflow($item, '1600 Pennsylvania Ave NW, Washington, DC 20500, USA');
+$orderId = '3141592';
+$workflow = new OrderWorkflow(
+    ['name' => 'shirt', 'orderId' => $orderId],
+    '1600 Pennsylvania Ave NW, Washington, DC 20500, USA'
+);
 
-$response = $client->start($workflow);
-echo json_encode($response).PHP_EOL;
-sleep(5);
+$workflow->dispatch();
 
-$instance = $client->find(OrderWorkflow::class)->byId($item['orderId']);
+sleep(3);
 
-$res = $instance->sendEvent(new AddressUpdatedEvent('One Infinite Loop Cupertino, CA 95014'));
-echo json_encode($res).PHP_EOL;
+OrderWorkflow::whereId($orderId)->send(new AddressUpdatedEvent('One Infinite Loop Cupertino, CA 95014'));

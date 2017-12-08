@@ -2,10 +2,12 @@
 
 use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Tasks\Wait;
-use Carbon\Carbon;
+use Zenaton\Traits\Zenatonable;
 
 class WelcomeWorkflow implements WorkflowInterface
 {
+    use Zenatonable;
+
     protected $user;
 
     public function __construct($user)
@@ -15,14 +17,14 @@ class WelcomeWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        execute(new SendWelcomeEmail1($this->user['email']));
+        (new SendWelcomeEmail1($this->user['email']))->execute();
 
-        execute((new Wait())->seconds(5));
+        (new Wait)->seconds(5)->execute();
 
-        execute(new SendWelcomeEmail2($this->user['email']));
+        (new SendWelcomeEmail2($this->user['email']))->execute();
 
-        execute((new Wait())->seconds(5));
+        (new Wait)->seconds(5)->execute();
 
-        execute(new SendWelcomeEmail3($this->user['email']));
+        (new SendWelcomeEmail3($this->user['email']))->execute();
     }
 }

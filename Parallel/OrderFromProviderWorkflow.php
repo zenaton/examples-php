@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Traits\Zenatonable;
 
 class OrderFromProviderWorkflow implements WorkflowInterface
 {
+    use Zenatonable;
+
     protected $item;
 
     public function __construct($item)
@@ -13,15 +16,15 @@ class OrderFromProviderWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        list($priceA, $priceB) = execute(
+        list($priceA, $priceB) = parallel(
             new GetPriceFromProviderA($this->item),
             new GetPriceFromProviderB($this->item)
-        );
+        )->execute();
 
         if ($priceA < $priceB) {
-            execute(new OrderFromProviderA($this->item));
+            (new OrderFromProviderA($this->item))->execute();
         } else {
-            execute(new OrderFromProviderB($this->item));
+            (new OrderFromProviderB($this->item))->execute();
         }
     }
 }

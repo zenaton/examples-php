@@ -1,10 +1,13 @@
 <?php
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class SendInvitation implements TaskInterface
 {
-    protected $name;
+    use Zenatonable;
+
+    public $name;
 
     public function __construct($name)
     {
@@ -14,7 +17,6 @@ class SendInvitation implements TaskInterface
     public function handle()
     {
         // Fake API request to send invitation
-        echo 'Sending Invitation to: '.$this->name;
         sleep(2);
         echo '- invitation sent to '.$this->name;
     }

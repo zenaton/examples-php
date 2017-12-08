@@ -3,9 +3,12 @@
 namespace Version;
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class GetPriceFromProviderB implements TaskInterface
 {
+    use Zenatonable;
+
     protected $item;
     protected $version;
 

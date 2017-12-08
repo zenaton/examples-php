@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Traits\Zenatonable;
 
 class SendInvitationsWorkflow implements WorkflowInterface
 {
+    use Zenatonable;
+
     protected $invitations;
 
     public function __construct($invitations)
@@ -14,7 +17,17 @@ class SendInvitationsWorkflow implements WorkflowInterface
     public function handle()
     {
         foreach ($this->invitations as $invitation) {
-            executeAsync(new SendInvitation($invitation));
+            (new SendInvitation($invitation))->dispatch();
         }
+    }
+
+    public function onStart($task)
+    {
+        echo get_class($task) . ' ' . $task->name;
+    }
+
+    public function onCompleted($task, $output)
+    {
+        echo get_class($task) . ' ' . $task->name;
     }
 }

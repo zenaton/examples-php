@@ -7,5 +7,4 @@ $workflow = new OrderFromProviderWorkflow(
     ['name' => 'shirt']
 );
 
-$response = $client->start($workflow);
-echo json_encode($response).PHP_EOL;
+$workflow->dispatch();

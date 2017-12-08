@@ -7,5 +7,4 @@ $workflow = new SendInvitationsWorkflow(
     ['Gilles', 'Julien', 'Oussama', 'Alice', 'Charlotte', 'Balthazar', 'Annabelle', 'Louis']
 );
 
-$response = $client->start($workflow);
-echo json_encode($response).PHP_EOL;
+$workflow->dispatch();

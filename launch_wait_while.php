@@ -5,19 +5,15 @@ require __DIR__.'/client.php';
 
 $workflow = new RetentionWorkflow(['email' => 'user@yoursite.com']);
 
-$response = $client->start($workflow);
-echo json_encode($response).PHP_EOL;
+$workflow->dispatch();
 
-$instance = $client->find(RetentionWorkflow::class)->byId('user@yoursite.com');
-
-sleep(2);
-$response = $instance->sendEvent(new UserRetentionEvent());
-echo json_encode($response).PHP_EOL;
+$instance = RetentionWorkflow::whereId('user@yoursite.com');
 
 sleep(2);
-$response = $instance->sendEvent(new UserRetentionEvent());
-echo json_encode($response).PHP_EOL;
+$instance->send(new UserRetentionEvent());
 
 sleep(2);
-$response = $instance->sendEvent(new UserRetentionEvent());
-echo json_encode($response).PHP_EOL;
+$instance->send(new UserRetentionEvent());
+
+sleep(2);
+$instance->send(new UserRetentionEvent());

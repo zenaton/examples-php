@@ -3,13 +3,15 @@
 require __DIR__.'/autoload.php';
 require __DIR__.'/client.php';
 
-$workflow = new Version\OrderFromProviderWorkflow(
-    ['name' => 'shirt']
-);
+use Version\OrderFromProviderWorkflow;
 
-$response = $client->start($workflow);
-echo json_encode($response).PHP_EOL;
+$id = 'shirt';
+$workflow = new OrderFromProviderWorkflow(['name' => $id]);
 
-$instance = $client->find('Version\OrderFromProviderWorkflow')->byId('shirt');
+$workflow->dispatch();
+
 sleep(5);
-var_dump($instance->getProperties());
+
+$workflow = OrderFromProviderWorkflow::whereId($id)->find();
+
+var_dump($workflow);

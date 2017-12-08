@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class SendActivateEmail1 implements TaskInterface
 {
+    use Zenatonable;
+
     protected $email;
 
     public function __construct($email)

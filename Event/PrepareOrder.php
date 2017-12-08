@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class PrepareOrder implements TaskInterface
 {
+    use Zenatonable;
+
     protected $item;
 
     public function __construct($item)
@@ -14,7 +17,7 @@ class PrepareOrder implements TaskInterface
     public function handle()
     {
         echo 'Preparing order for item: '.$this->item['name'];
-        sleep(10);
+        sleep(6);
         echo '- order prepared';
     }
 }

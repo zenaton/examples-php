@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class SendOrder implements TaskInterface
 {
+    use Zenatonable;
+
     protected $item;
     protected $address;
 

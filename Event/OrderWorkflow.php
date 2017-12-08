@@ -2,9 +2,12 @@
 
 use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Interfaces\EventInterface;
+use Zenaton\Traits\Zenatonable;
 
 class OrderWorkflow implements WorkflowInterface
 {
+    use Zenatonable;
+
     protected $item;
     protected $address;
 
@@ -16,9 +19,9 @@ class OrderWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        execute(new PrepareOrder($this->item));
+        (new PrepareOrder($this->item))->execute();
 
-        execute(new SendOrder($this->item, $this->address));
+        (new SendOrder($this->item, $this->address))->execute();
     }
 
     public function onEvent(EventInterface $event)

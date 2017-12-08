@@ -21,4 +21,4 @@ if (!$app_env) {
     die();
 }
 
-$client = new Zenaton\Client\Client($app_id, $api_token, $app_env);
+Zenaton\Client::init($app_id, $api_token, $app_env);

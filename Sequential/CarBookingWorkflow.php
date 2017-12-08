@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\WorkflowInterface;
+use Zenaton\Traits\Zenatonable;
 
 class CarBookingWorkflow implements WorkflowInterface
 {
+    use Zenatonable;
+    
     protected $request;
 
     public function __construct($request)
@@ -13,8 +16,8 @@ class CarBookingWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        $request = execute(new BookCar($this->request));
+        $request = (new BookCar($this->request))->execute();
 
-        execute(new SendBookingConfirmation($request));
+        (new SendBookingConfirmation($request))->execute();
     }
 }

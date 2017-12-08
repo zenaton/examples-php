@@ -3,9 +3,12 @@
 namespace Version;
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class OrderFromProviderD implements TaskInterface
 {
+    use Zenatonable;
+
     protected $item;
     protected $version;
 

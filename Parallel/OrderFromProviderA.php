@@ -1,9 +1,12 @@
 <?php
 
 use Zenaton\Interfaces\TaskInterface;
+use Zenaton\Traits\Zenatonable;
 
 class OrderFromProviderA implements TaskInterface
 {
+    use Zenatonable;
+
     protected $item;
 
     public function __construct($item)
