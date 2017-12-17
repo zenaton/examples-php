@@ -6,7 +6,7 @@ use Zenaton\Traits\Zenatonable;
 class CarBookingWorkflow implements WorkflowInterface
 {
     use Zenatonable;
-    
+
     protected $request;
 
     public function __construct($request)
@@ -17,7 +17,6 @@ class CarBookingWorkflow implements WorkflowInterface
     public function handle()
     {
         $request = (new BookCar($this->request))->execute();
-
         (new SendBookingConfirmation($request))->execute();
     }
 }

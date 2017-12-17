@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ad22aa7dc61d8af9e47cb09581a7663",
+    "content-hash": "a34625a6b0394956931fffaa75e8a29e",
     "packages": [
         {
             "name": "jeremeamia/SuperClosure",
@@ -391,12 +391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "e05b0a5996ad7a35ba3a19ffad8b72c9daa64dfa"
+                "reference": "4c5d5582baf2829751a5207659329c1f52eedeb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/e05b0a5996ad7a35ba3a19ffad8b72c9daa64dfa",
-                "reference": "e05b0a5996ad7a35ba3a19ffad8b72c9daa64dfa",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/4c5d5582baf2829751a5207659329c1f52eedeb6",
+                "reference": "4c5d5582baf2829751a5207659329c1f52eedeb6",
                 "shasum": ""
             },
             "require": {
@@ -451,7 +451,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-27T14:23:00+00:00"
+            "time": "2017-12-12T08:27:14+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -505,16 +505,16 @@
         },
         {
             "name": "zenaton/zenaton-php",
-            "version": "dev-library-become-client",
+            "version": "dev-Leucippe",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "0a57aa56afdde6a123241b25e281228b13a9fc5e"
+                "reference": "f8ef08ee5fcd02777887f7f1214488d6baaac7df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/0a57aa56afdde6a123241b25e281228b13a9fc5e",
-                "reference": "0a57aa56afdde6a123241b25e281228b13a9fc5e",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/f8ef08ee5fcd02777887f7f1214488d6baaac7df",
+                "reference": "f8ef08ee5fcd02777887f7f1214488d6baaac7df",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +541,7 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2017-12-04T17:40:50+00:00"
+            "time": "2017-12-15T13:07:09+00:00"
         }
     ],
     "packages-dev": [],

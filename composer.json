@@ -4,7 +4,7 @@
     "minimum-stability": "dev",
     "require": {
       "php": ">=5.4.0",
-      "zenaton/zenaton-php": "dev-library-become-client",
+      "zenaton/zenaton-php": "dev-Leucippe",
       "vlucas/phpdotenv": "^2.4@dev"
     },
     "scripts": {
