@@ -11,9 +11,10 @@ class OrderWorkflow implements WorkflowInterface
     protected $item;
     protected $address;
 
-    public function __construct($item, $address)
+    public function __construct($item, $orderId, $address)
     {
         $this->item = $item;
+        $this->orderId = $orderId;
         $this->address = $address;
     }
 
@@ -33,6 +34,6 @@ class OrderWorkflow implements WorkflowInterface
 
     public function getId()
     {
-        return $this->item['orderId'];
+        return $this->orderId;
     }
 }
