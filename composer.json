@@ -2,10 +2,10 @@
     "name": "zenaton/examples-php",
     "license": "Apache-2.0",
     "minimum-stability": "dev",
+    "prefer-stable" : true,
     "require": {
       "php": ">=5.4.0",
-      "zenaton/zenaton-php": "dev-Leucippe",
-      "vlucas/phpdotenv": "^2.4@dev"
+      "zenaton/zenaton-php": "dev-Leucippe"
     },
     "scripts": {
         "post-install-cmd": [

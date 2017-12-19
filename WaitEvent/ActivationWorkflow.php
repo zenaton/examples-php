@@ -35,7 +35,7 @@ class ActivationWorkflow implements WorkflowInterface
             return (new LogActivateUser(2))->execute();
         }
 
-        execute(new LogActivateUser(3));
+        (new LogActivateUser(3))->execute();
     }
 
     public function getId()

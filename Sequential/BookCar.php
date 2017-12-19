@@ -17,7 +17,7 @@ class BookCar implements TaskInterface
     public function handle()
     {
         echo 'Booking car for Request ID: '.$this->request['id'];
-        sleep(5);
+        sleep(2);
         $this->request['booking_id'] = 'QSFG34';
         echo '- car booked: '.$this->request['booking_id'];
 
