@@ -17,20 +17,16 @@ class ActivationWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        list($tmp, $event) = parallel(
-            new SendActivateEmail1($this->user['email']),
-            (new Wait(UserActivatedEvent::class))->seconds(10)
-        )->execute();
+        (new SendActivateEmail1($this->user['email']))->dispatch();
 
+        $event = (new Wait(UserActivatedEvent::class))->seconds(4)->execute();
         if ($event) {
             return (new LogActivateUser(1))->execute();
         }
 
-        list($tmp, $event) = parallel(
-            new SendActivateEmail2($this->user['email']),
-            (new Wait(UserActivatedEvent::class))->seconds(4)
-        )->execute();
+        (new SendActivateEmail2($this->user['email']))->dispatch();
 
+        $event = (new Wait(UserActivatedEvent::class))->seconds(4)->execute();
         if ($event) {
             return (new LogActivateUser(2))->execute();
         }

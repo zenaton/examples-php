@@ -16,7 +16,7 @@ class OrderFromProviderWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        list($priceA, $priceB) = parallel(
+        [$priceA, $priceB] = parallel(
             new GetPriceFromProviderA($this->item),
             new GetPriceFromProviderB($this->item)
         )->execute();
