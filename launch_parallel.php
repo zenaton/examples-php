@@ -1,9 +1,8 @@
 <?php
 
 require __DIR__.'/autoload.php';
-require __DIR__.'/client.php';
 
-$workflow = new OrderFromProviderWorkflow(
+$workflow = new ParallelWorkflow(
     ['name' => 'shirt']
 );
 

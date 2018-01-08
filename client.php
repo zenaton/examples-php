@@ -1,7 +1,7 @@
 <?php
 
 // load .env file
-(new Dotenv\Dotenv(__DIR__))->load();
+(new Dotenv\Dotenv(__DIR__))->overload();
 
 $app_id = getenv('ZENATON_APP_ID');
 if (!$app_id) {

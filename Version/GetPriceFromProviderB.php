@@ -23,7 +23,7 @@ class GetPriceFromProviderB implements TaskInterface
         // Fake API request to get price from provider B
         echo 'Contacting provider B to get the price...';
         if (! is_null($this->version)) echo ' using version '.$this->version;
-        sleep(2);
+        sleep(10);
         $price = rand(80, 100);
         echo '- price from Provider B is: '.$price;
 

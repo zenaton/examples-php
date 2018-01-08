@@ -1,11 +1,12 @@
 <?php
 
 require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/client.php';
 
-// if (!class_exists('Zenaton\Worker\Workflow')) {
-//     echo "Please run 'composer install' before launching an example";
-//     die();
-// }
+if (! class_exists('Zenaton\Client')) {
+    echo "Please run 'composer install' before launching an example";
+    die();
+}
 
 $classesDir = [
     __DIR__.'/Asynchronous',
@@ -14,8 +15,7 @@ $classesDir = [
     __DIR__.'/Sequential',
     __DIR__.'/Version',
     __DIR__.'/Wait',
-    __DIR__.'/WaitEvent',
-    __DIR__.'/WaitWhile',
+    __DIR__.'/WaitEvent'
 ];
 
 foreach ($classesDir as $directory) {

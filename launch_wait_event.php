@@ -1,7 +1,6 @@
 <?php
 
 require __DIR__.'/autoload.php';
-require __DIR__.'/client.php';
 
 $user = ['email' => 'user@yoursite.com'];
 $workflow = new ActivationWorkflow($user);

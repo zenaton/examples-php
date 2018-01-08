@@ -27,4 +27,9 @@ class WelcomeWorkflow implements WorkflowInterface
 
         (new SendWelcomeEmail3($this->user['email']))->execute();
     }
+
+    public function onStart($task)
+    {
+        echo 'starting ' . get_class($task) . ' task ';
+    }
 }
