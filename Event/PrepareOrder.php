@@ -16,8 +16,8 @@ class PrepareOrder implements TaskInterface
 
     public function handle()
     {
-        echo 'Preparing order for item: '.$this->item;
+        echo 'Preparing order for item: '.$this->item . PHP_EOL;
         sleep(6);
-        echo '- order prepared';
+        echo '- order prepared' . PHP_EOL;
     }
 }

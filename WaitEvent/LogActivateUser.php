@@ -16,6 +16,6 @@ class LogActivateUser implements TaskInterface
 
     public function handle()
     {
-        echo 'Ending at stage '.$this->stage;
+        echo 'Ending at stage ' . $this->stage . PHP_EOL;
     }
 }

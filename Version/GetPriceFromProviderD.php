@@ -21,11 +21,11 @@ class GetPriceFromProviderD implements TaskInterface
     public function handle()
     {
         // Fake API request to get price from provider B
-        echo 'Contacting provider D to get the price...';
-        if (! is_null($this->version)) echo ' using version '.$this->version;
+        echo 'Contacting provider D to get the price...' . PHP_EOL;
+        if (! is_null($this->version)) echo ' using version ' . $this->version . PHP_EOL;
         sleep(2);
-        $price = rand(80, 100);
-        echo '- price from Provider D is: '.$price;
+        $price = 91;
+        echo '- price from Provider D is: '.$price . PHP_EOL;
 
         return $price;
     }

@@ -18,8 +18,8 @@ class SendOrder implements TaskInterface
 
     public function handle()
     {
-        echo 'Sending '.$this->item.' to '.$this->address;
+        echo 'Sending '.$this->item.' to ' . $this->address . PHP_EOL;
         sleep(rand(5, 10));
-        echo '- sent';
+        echo '- sent' . PHP_EOL;
     }
 }

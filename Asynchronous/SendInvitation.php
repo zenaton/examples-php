@@ -18,6 +18,6 @@ class SendInvitation implements TaskInterface
     {
         // Fake API request to send invitation
         sleep(2);
-        echo '- invitation sent to '.$this->name;
+        echo '- invitation sent to ' . $this->name . PHP_EOL;
     }
 }

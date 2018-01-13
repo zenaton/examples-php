@@ -17,6 +17,6 @@ class OrderFromProviderA implements TaskInterface
     public function handle()
     {
         // Fake API request to order from provider A
-        echo 'Order "'.$this->item['name'].'" from Provider A';
+        echo 'Order "'.$this->item['name'].'" from Provider A' . PHP_EOL;
     }
 }

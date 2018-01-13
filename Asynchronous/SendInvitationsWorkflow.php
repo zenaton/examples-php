@@ -23,16 +23,16 @@ class SendInvitationsWorkflow implements WorkflowInterface
 
     public function onStart($task)
     {
-        echo 'starting ' . get_class($task) . ' task for ' . $task->name;
+        echo 'starting ' . get_class($task) . ' task for ' . $task->name . PHP_EOL;
     }
 
     public function onSuccess($task, $output)
     {
-        echo 'done ' . get_class($task) . ' task for ' . $task->name;
+        echo 'done ' . get_class($task) . ' task for ' . $task->name . PHP_EOL;
     }
 
     public function onFailure($task, $error)
     {
-        echo 'failed ' . get_class($task) . ' task for ' . $task->name . ' with msg ' . $error->getMessage();
+        echo 'failed ' . get_class($task) . ' task for ' . $task->name . ' with msg ' . $error->getMessage() . PHP_EOL;
     }
 }

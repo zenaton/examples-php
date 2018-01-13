@@ -3,7 +3,7 @@
 use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Traits\Zenatonable;
 
-class OrderFromProviderWorkflow implements WorkflowInterface
+class ParallelWorkflow implements WorkflowInterface
 {
     use Zenatonable;
 

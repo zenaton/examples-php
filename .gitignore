@@ -1,5 +1,6 @@
 .env
-/zenaton
 /vendor
 .DS_Store
 zenaton.out
+zenaton.err
+zenaton.log

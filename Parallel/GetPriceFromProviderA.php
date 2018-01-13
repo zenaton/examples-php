@@ -17,10 +17,10 @@ class GetPriceFromProviderA implements TaskInterface
     public function handle()
     {
         // Fake API request to get price from provider A
-        echo 'Contacting provider A to get the price...';
+        echo 'Contacting provider A to get the price...' . PHP_EOL;
         sleep(2);
         $price = rand(80, 100);
-        echo '- price from Provider A is: '.$price;
+        echo '- price from Provider A is: ' . $price . PHP_EOL;
 
         return $price;
     }

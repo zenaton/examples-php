@@ -16,8 +16,8 @@ class SendActivateEmail2 implements TaskInterface
 
     public function handle()
     {
-        echo 'Sending activate email 2 to: '.$this->email;
+        echo 'Sending activate email 2 to: ' . $this->email . PHP_EOL;
         sleep(1);
-        echo '- email 2 sent';
+        echo '- email 2 sent' . PHP_EOL;
     }
 }
