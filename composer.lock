@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cakephp/chronos",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/chronos.git",
-                "reference": "56d98330d366a469745848b07540373846c40561"
+                "reference": "85bcaea6a832684b32ef54b2487b0c14a172e9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/chronos/zipball/56d98330d366a469745848b07540373846c40561",
-                "reference": "56d98330d366a469745848b07540373846c40561",
+                "url": "https://api.github.com/repos/cakephp/chronos/zipball/85bcaea6a832684b32ef54b2487b0c14a172e9e6",
+                "reference": "85bcaea6a832684b32ef54b2487b0c14a172e9e6",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-12-25T22:42:18+00:00"
+            "time": "2018-01-13T12:19:50+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -386,12 +386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "b8fdd325f520d56174cc67ed76ea894b964f527f"
+                "reference": "8f327ce0e3826ca79256e7e16ce65837b090f052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/b8fdd325f520d56174cc67ed76ea894b964f527f",
-                "reference": "b8fdd325f520d56174cc67ed76ea894b964f527f",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/8f327ce0e3826ca79256e7e16ce65837b090f052",
+                "reference": "8f327ce0e3826ca79256e7e16ce65837b090f052",
                 "shasum": ""
             },
             "require": {
@@ -418,7 +418,7 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2018-01-12T21:43:27+00:00"
+            "time": "2018-01-16 11:04:17"
         }
     ],
     "packages-dev": [],
