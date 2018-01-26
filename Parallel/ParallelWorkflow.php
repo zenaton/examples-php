@@ -2,6 +2,7 @@
 
 use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Traits\Zenatonable;
+use Zenaton\Parallel\Parallel;
 
 class ParallelWorkflow implements WorkflowInterface
 {
@@ -16,10 +17,10 @@ class ParallelWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        [$priceA, $priceB] = parallel(
+        [$priceA, $priceB] = (new Parallel(
             new GetPriceFromProviderA($this->item),
             new GetPriceFromProviderB($this->item)
-        )->execute();
+        ))->execute();
 
         if ($priceA < $priceB) {
             (new OrderFromProviderA($this->item))->execute();

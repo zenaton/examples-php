@@ -17,7 +17,7 @@ class CarBookingWorkflow implements WorkflowInterface
     public function handle()
     {
         $request = (new BookCar($this->request))->execute();
-        
+
         (new SendBookingConfirmation($request))->execute();
     }
 }
