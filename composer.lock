@@ -386,12 +386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "4884a941d18bccd39b70b06ada8499f29a456f91"
+                "reference": "ca6e81f19f61160f9d8623ed5bf832c9c4270a20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/4884a941d18bccd39b70b06ada8499f29a456f91",
-                "reference": "4884a941d18bccd39b70b06ada8499f29a456f91",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/ca6e81f19f61160f9d8623ed5bf832c9c4270a20",
+                "reference": "ca6e81f19f61160f9d8623ed5bf832c9c4270a20",
                 "shasum": ""
             },
             "require": {
@@ -416,7 +416,7 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2018-01-18T11:36:21+00:00"
+            "time": "2018-01-26 11:38:23"
         }
     ],
     "packages-dev": [],
