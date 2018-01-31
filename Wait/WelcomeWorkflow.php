@@ -8,23 +8,23 @@ class WelcomeWorkflow implements WorkflowInterface
 {
     use Zenatonable;
 
-    protected $user;
+    protected $email;
 
-    public function __construct($user)
+    public function __construct($email)
     {
-        $this->user = $user;
+        $this->email = $email;
     }
 
     public function handle()
     {
-        (new SendWelcomeEmail1($this->user['email']))->execute();
+        (new SendWelcomeEmail1($this->email))->execute();
 
-        (new Wait)->seconds(5)->execute();
+        (new Wait())->seconds(5)->execute();
 
-        (new SendWelcomeEmail2($this->user['email']))->execute();
+        (new SendWelcomeEmail2($this->email))->execute();
 
-        (new Wait)->seconds(5)->execute();
+        (new Wait())->seconds(5)->execute();
 
-        (new SendWelcomeEmail3($this->user['email']))->execute();
+        (new SendWelcomeEmail3($this->email))->execute();
     }
 }

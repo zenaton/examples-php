@@ -2,6 +2,5 @@
 
 require __DIR__.'/autoload.php';
 
-$workflow = new WelcomeWorkflow(['email' => 'user@yoursite.com']);
-
+$workflow = new WelcomeWorkflow('user@yoursite.com');
 $workflow->dispatch();
