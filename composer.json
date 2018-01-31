@@ -4,7 +4,7 @@
     "minimum-stability": "dev",
     "prefer-stable" : true,
     "require": {
-      "zenaton/zenaton-php": "dev-Leucippe"
+        "zenaton/zenaton-php": "dev-Leucippe"
     },
     "scripts": {
         "post-install-cmd": [
