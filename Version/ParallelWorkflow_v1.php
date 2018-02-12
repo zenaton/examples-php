@@ -4,6 +4,7 @@ namespace Version;
 
 use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Traits\Zenatonable;
+use Zenaton\Parallel\Parallel;
 
 class ParallelWorkflow_v1 implements WorkflowInterface
 {
@@ -18,14 +19,13 @@ class ParallelWorkflow_v1 implements WorkflowInterface
 
     public function handle()
     {
-        $prices = parallel(
+        $prices = (new Parallel(
             new GetPriceFromProviderA($this->item, 1),
             new GetPriceFromProviderB($this->item, 1),
             new GetPriceFromProviderC($this->item, 1)
-        )->execute();
+        ))->execute();
 
-        switch (array_keys($prices, min($prices))[0])
-        {
+        switch (array_keys($prices, min($prices))[0]) {
             case 0:
                 (new OrderFromProviderA($this->item, 1))->execute();
                 break;

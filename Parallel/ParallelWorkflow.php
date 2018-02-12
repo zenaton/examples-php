@@ -17,7 +17,7 @@ class ParallelWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        [$priceA, $priceB] = (new Parallel(
+        list($priceA, $priceB) = (new Parallel(
             new GetPriceFromProviderA($this->item),
             new GetPriceFromProviderB($this->item)
         ))->execute();
