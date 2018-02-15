@@ -2,7 +2,7 @@
     "name": "zenaton/examples-php",
     "license": "Apache-2.0",
     "require": {
-        "zenaton/zenaton-php": "^0.2.2"
+        "zenaton/zenaton-php": "^0.2"
     },
     "scripts": {
         "post-install-cmd": [

@@ -8,20 +8,24 @@ class RelaunchTask implements TaskInterface
     use Zenatonable;
 
     protected $id;
+    protected $max;
 
-    public function __construct($id)
+    public function __construct($id, $max)
     {
         $this->id = $id;
+        $this->max = $max;
     }
 
     public function handle()
     {
-        ++$this->id;
+        if ($this->id < $this->max) {
+            ++$this->id;
 
-        // get iteration of current instance
-        echo PHP_EOL.'Iteration: '.$this->id.PHP_EOL;
+            // get iteration of current instance
+            echo PHP_EOL.'Iteration: '.$this->id.PHP_EOL;
 
-        // launch new workflow
-        (new RecursiveWorkflow($this->id))->dispatch();
+            // launch new workflow
+            (new RecursiveWorkflow($this->id, $this->max))->dispatch();
+        }
     }
 }

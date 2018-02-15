@@ -9,26 +9,27 @@ class RecursiveWorkflow implements WorkflowInterface
     use Zenatonable;
 
     protected $id;
-    protected $counter;
+    protected $max;
 
-    public function __construct($id)
+    public function __construct($id, $max)
     {
         $this->id = $id;
-        $this->counter = 0;
+        $this->max = $max;
     }
 
     public function handle()
     {
-        while ($this->counter < 10) {
-            (new DisplayTask($this->counter))->execute();
-            ++$this->counter;
+        $counter = 0;
+        while ($counter < 10) {
+            (new DisplayTask($counter))->execute();
+            ++$counter;
         }
 
         (new SendEventTask($this->id))->dispatch();
 
         (new Wait(EndingEvent::class))->execute();
 
-        (new RelaunchTask($this->id))->execute();
+        (new RelaunchTask($this->id, $this->max))->execute();
     }
 
     public function getId()

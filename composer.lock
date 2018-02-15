@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdf854f80247672fc4282d5ad9f41042",
+    "content-hash": "4ea6fc99d0a9a2711c2235de59a4434f",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -382,23 +382,23 @@
         },
         {
             "name": "zenaton/zenaton-php",
-            "version": "0.2.0",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "817a581a5be715ab7b1f7b735a5db900d1e5126f"
+                "reference": "f54c0fb916006abb7e2308af6ac858aa744b7b98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/817a581a5be715ab7b1f7b735a5db900d1e5126f",
-                "reference": "817a581a5be715ab7b1f7b735a5db900d1e5126f",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/f54c0fb916006abb7e2308af6ac858aa744b7b98",
+                "reference": "f54c0fb916006abb7e2308af6ac858aa744b7b98",
                 "shasum": ""
             },
             "require": {
                 "cakephp/chronos": "^1.1",
                 "jeremeamia/superclosure": "^2.0",
                 "nategood/httpful": "^0.2",
-                "php": ">=5.4.0",
+                "php": ">=5.6.0",
                 "vlucas/phpdotenv": "^2.4"
             },
             "require-dev": {
@@ -416,7 +416,7 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2018-02-01T09:24:10+00:00"
+            "time": "2018-02-12T09:18:29+00:00"
         }
     ],
     "packages-dev": [],
