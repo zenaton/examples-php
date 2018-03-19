@@ -2,14 +2,10 @@
 
 require __DIR__.'/autoload.php';
 
-$workflow = new OrderWorkflow(
-    'shirt',
-    '3141592',
-    '1600 Pennsylvania Ave NW, Washington, DC 20500, USA'
-);
+$workflow = new EventWorkflow();
 
 $workflow->dispatch();
 
-sleep(3);
+sleep(1);
 
-OrderWorkflow::whereId('3141592')->send(new AddressUpdatedEvent('One Infinite Loop Cupertino, CA 95014'));
+EventWorkflow::whereId('MyEventWorkflowExample')->send(new MyEvent());

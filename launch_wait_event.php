@@ -2,11 +2,10 @@
 
 require __DIR__.'/autoload.php';
 
-$user = ['email' => 'user@yoursite.com'];
-$workflow = new ActivationWorkflow($user);
+$workflow = new WaitEventWorkflow();
 
 $workflow->dispatch();
 
 sleep(6);
 
-ActivationWorkflow::whereId('user@yoursite.com')->send(new UserActivatedEvent('User did an important action'));
+WaitEventWorkflow::whereId('MyWaitEventWorkflowExample')->send(new MyEvent());

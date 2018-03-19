@@ -9,14 +9,9 @@ if (!class_exists('Zenaton\Client')) {
 }
 
 $classesDir = [
-    __DIR__.'/Asynchronous',
-    __DIR__.'/Event',
-    __DIR__.'/Parallel',
-    __DIR__.'/Sequential',
-    __DIR__.'/Version',
-    __DIR__.'/Wait',
-    __DIR__.'/WaitEvent',
-    __DIR__.'/Recursive',
+    __DIR__.'/Tasks',
+    __DIR__.'/Workflows',
+    __DIR__.'/Events'
 ];
 
 foreach ($classesDir as $directory) {

@@ -30,6 +30,10 @@ Your all set!
 - a sequential execution of two tasks. The second task is executed only when the first one is processed.
 - the result of the first task can be used by the second one.
 
+<!-- ![Sequential workflow diagram](support/sequential_workflow.png "Sequential Workflow Diagram") -->
+<p align="center">
+    <img src="support/sequential_workflow.png" alt="Sequential Workflow Diagram" />
+</p>
 ```
 php launch_sequential.php
 ```
@@ -38,7 +42,9 @@ php launch_sequential.php
 [This example](https://github.com/zenaton/examples-php/tree/master/Parallel) showcases
 - a parallel execution of 2 tasks
 - a third task that is executed only after *both* first two tasks were processed
-
+<p align="center">
+    <img src="support/parallel_workflow.png" alt="Sequential Workflow Diagram" />
+</p>
 ```
 php launch_parallel.php
 ```
