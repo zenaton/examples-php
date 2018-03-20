@@ -44,7 +44,7 @@ php launch_sequential.php
 - a third task that is executed only after *both* first two tasks were processed
 
 <p align="center">
-    <img src="support/parallel_workflow.png" alt="Sequential Workflow Diagram" />
+    <img src="support/parallel_workflow.png" alt="Parallel Workflow Diagram" />
 </p>
 
 ```
@@ -57,10 +57,10 @@ php launch_parallel.php
 - Then a sequential execution of Task C
 
 <p align="center">
-    <img src="support/asynchronous_workflow.png" alt="Sequential Workflow Diagram" />
+    <img src="support/asynchronous_workflow.png" alt="Asynchronous Workflow Diagram" />
 </p>
 
-```
+```php
 php launch_asynchronous.php
 ```
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
@@ -68,6 +68,10 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 ## Example 4: Event
 [This example](https://github.com/zenaton/examples-php/tree/master/Event) showcases
 - how to change a workflow's behaviour based on an external event
+
+<p align="center">
+    <img src="support/event_workflow.png" alt="Event Workflow Diagram" />
+</p>
 
 ```php
 php launch_event.php
@@ -77,6 +81,10 @@ php launch_event.php
 [This example](https://github.com/zenaton/examples-php/tree/master/Wait) showcases
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
+<p align="center">
+    <img src="support/wait_workflow.png" alt="Wait Workflow Diagram" />
+</p>
+
 ```php
 php launch_wait.php
 ```
@@ -84,6 +92,10 @@ php launch_wait.php
 ## Example 6: Wait Event
 [This example](https://github.com/zenaton/examples-php/tree/master/WaitEvent) showcases
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
+
+<p align="center">
+    <img src="support/waitEvent_workflow.png" alt="WaitEvent Workflow Diagram" />
+</p>
 
 ```
 php launch_wait_event.php
