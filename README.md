@@ -97,22 +97,22 @@ php launch_wait.php
     <img src="support/waitEvent_workflow.png" alt="WaitEvent Workflow Diagram" />
 </p>
 
-```
+```php
 php launch_wait_event.php
 ```
 
-## Example7: Recursive Workflow
+## Example 7: Recursive Workflow
 [This example](https://github.com/zenaton/examples-php/tree/master/Recursive) showcases
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
-```
+```php
 php launch_recursive.php
 ```
 
-## Example8: Workflow Versions
+## Example 8: Workflow Versions
 [This example](https://github.com/zenaton/examples-php/tree/master/Version) showcases
 - how to update your workflow implementation, even while previous versions are still running
 
-```
+```php
 php launch_version.php
 ```

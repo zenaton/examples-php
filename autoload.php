@@ -11,7 +11,8 @@ if (!class_exists('Zenaton\Client')) {
 $classesDir = [
     __DIR__.'/Tasks',
     __DIR__.'/Workflows',
-    __DIR__.'/Events'
+    __DIR__.'/Events',
+    __DIR__.'/Recursive'
 ];
 
 foreach ($classesDir as $directory) {
