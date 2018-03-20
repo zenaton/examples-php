@@ -27,14 +27,14 @@ Your all set!
 
 ## Example 1 : Sequential tasks execution
 [This example](https://github.com/zenaton/examples-php/tree/master/Sequential) showcases
-- a sequential execution of two tasks. The second task is executed only when the first one is processed.
-- the result of the first task can be used by the second one.
+- A sequential execution of three tasks. The second task is executed only when the first one is processed and the third one after the second task execution.
+- In a sequential task execution, you can get the output of a task.
 
-<!-- ![Sequential workflow diagram](support/sequential_workflow.png "Sequential Workflow Diagram") -->
 <p align="center">
     <img src="support/sequential_workflow.png" alt="Sequential Workflow Diagram" />
 </p>
-```
+
+```php
 php launch_sequential.php
 ```
 
@@ -42,16 +42,23 @@ php launch_sequential.php
 [This example](https://github.com/zenaton/examples-php/tree/master/Parallel) showcases
 - a parallel execution of 2 tasks
 - a third task that is executed only after *both* first two tasks were processed
+
 <p align="center">
     <img src="support/parallel_workflow.png" alt="Sequential Workflow Diagram" />
 </p>
+
 ```
 php launch_parallel.php
 ```
 
 ## Example 3: Asynchronous tasks execution
 [this example](https://github.com/zenaton/examples-php/tree/master/Asynchronous) showcases
-- an asynchronous execution of multiple tasks
+- An asynchronous execution of two tasks A and B (fire and forget)
+- Then a sequential execution of Task C
+
+<p align="center">
+    <img src="support/asynchronous_workflow.png" alt="Sequential Workflow Diagram" />
+</p>
 
 ```
 php launch_asynchronous.php
@@ -62,7 +69,7 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 [This example](https://github.com/zenaton/examples-php/tree/master/Event) showcases
 - how to change a workflow's behaviour based on an external event
 
-```
+```php
 php launch_event.php
 ```
 
@@ -70,7 +77,7 @@ php launch_event.php
 [This example](https://github.com/zenaton/examples-php/tree/master/Wait) showcases
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
-```
+```php
 php launch_wait.php
 ```
 
