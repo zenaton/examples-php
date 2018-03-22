@@ -26,7 +26,7 @@ Your all set!
 *Your workflows will be processed by your worker, so you won't see anything except the stdout and stderr, respectively `zenaton.out` and `zenaton.err`. Look at these files :)*
 
 ## Example 1 : Sequential tasks execution
-[This example](https://github.com/zenaton/examples-php/tree/master/Sequential) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/SequentialWorkflow.php) showcases
 - A sequential execution of two tasks. The second task is executed only when the first one is processed.
 - In a sequential task execution, you can get the output of a task.
 
@@ -39,7 +39,7 @@ php launch_sequential.php
 ```
 
 ## Example 2: Parallel tasks execution
-[This example](https://github.com/zenaton/examples-php/tree/master/Parallel) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/ParallelWorkflow.php) showcases
 - a parallel execution of 2 tasks
 - a third task that is executed only after *both* first two tasks were processed
 
@@ -47,12 +47,12 @@ php launch_sequential.php
     <img src="support/parallel_workflow.png" alt="Parallel Workflow Diagram" />
 </p>
 
-```
+```php
 php launch_parallel.php
 ```
 
 ## Example 3: Asynchronous tasks execution
-[this example](https://github.com/zenaton/examples-php/tree/master/Asynchronous) showcases
+[this example](https://github.com/zenaton/examples-php/tree/master/Workflows/AsynchronousWorkflow.php) showcases
 - An asynchronous execution of a task A (fire and forget)
 - Then a sequential execution of Task B
 
@@ -66,7 +66,7 @@ php launch_asynchronous.php
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
 
 ## Example 4: Event
-[This example](https://github.com/zenaton/examples-php/tree/master/Event) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/EventWorkflow.php) showcases
 - how to change a workflow's behaviour based on an external event
 
 <p align="center">
@@ -78,7 +78,7 @@ php launch_event.php
 ```
 
 ## Example 5: Wait
-[This example](https://github.com/zenaton/examples-php/tree/master/Wait) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/WaitWorkflow.php) showcases
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
 <p align="center">
@@ -90,7 +90,7 @@ php launch_wait.php
 ```
 
 ## Example 6: Wait Event
-[This example](https://github.com/zenaton/examples-php/tree/master/WaitEvent) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/WaitEventWorkflow.php) showcases
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
 
 <p align="center">
@@ -110,7 +110,7 @@ php launch_recursive.php
 ```
 
 ## Example 8: Workflow Versions
-[This example](https://github.com/zenaton/examples-php/tree/master/Version) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/VersionWorkflow.php) showcases
 - how to update your workflow implementation, even while previous versions are still running
 
 ```php
