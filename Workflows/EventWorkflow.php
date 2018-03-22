@@ -17,8 +17,7 @@ class EventWorkflow implements WorkflowInterface
 
     public function onEvent(EventInterface $event)
     {
-        // When an event is received - dispatch TaskB
-        echo 'Event received: '. get_class($event).PHP_EOL;
+        // When an event is received - dispatch TaskC
         if ($event instanceof MyEvent) {
             (new TaskC())->dispatch();
         }
