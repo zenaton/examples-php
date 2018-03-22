@@ -17,7 +17,6 @@ class EventWorkflow implements WorkflowInterface
 
     public function onEvent(EventInterface $event)
     {
-        // When an event is received - dispatch TaskC
         if ($event instanceof MyEvent) {
             (new TaskC())->dispatch();
         }
@@ -25,6 +24,6 @@ class EventWorkflow implements WorkflowInterface
 
     public function getId()
     {
-        return 'MyEventWorkflowExample';
+        return 'MyId';
     }
 }
