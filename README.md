@@ -27,7 +27,7 @@ Your all set!
 
 ## Example 1 : Sequential tasks execution
 [This example](https://github.com/zenaton/examples-php/tree/master/Sequential) showcases
-- A sequential execution of three tasks. The second task is executed only when the first one is processed and the third one after the second task execution.
+- A sequential execution of two tasks. The second task is executed only when the first one is processed.
 - In a sequential task execution, you can get the output of a task.
 
 <p align="center">
@@ -53,8 +53,8 @@ php launch_parallel.php
 
 ## Example 3: Asynchronous tasks execution
 [this example](https://github.com/zenaton/examples-php/tree/master/Asynchronous) showcases
-- An asynchronous execution of two tasks A and B (fire and forget)
-- Then a sequential execution of Task C
+- An asynchronous execution of a task A (fire and forget)
+- Then a sequential execution of Task B
 
 <p align="center">
     <img src="support/asynchronous_workflow.png" alt="Asynchronous Workflow Diagram" />

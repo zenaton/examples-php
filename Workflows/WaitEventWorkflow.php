@@ -10,26 +10,16 @@ class WaitEventWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        (new TaskA())->dispatch();
-
         // Wait until the event or 4 seconds
         $event = (new Wait(MyEvent::class))->seconds(4)->execute();
 
         // If event has been triggered
         if ($event) {
             // Execute TaskB
-            return (new TaskB())->execute();
-        }
-
-        // Dispatch Task C
-        (new TaskC())->dispatch();
-
-        // Wait until the event or 6 seconds
-        $event = (new Wait(MyEvent::class))->seconds(6)->execute();
-        // If event has been triggered
-        if ($event) {
-            // Execute TaskD
-            return (new TaskD())->execute();
+            (new TaskA())->execute();
+        } else {
+            // Execute Task B
+            (new TaskB())->execute();
         }
     }
 

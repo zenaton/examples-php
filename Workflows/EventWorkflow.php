@@ -10,9 +10,9 @@ class EventWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        (new TaskB())->execute();
+        (new TaskA())->execute();
 
-        (new TaskC())->execute();
+        (new TaskB())->execute();
     }
 
     public function onEvent(EventInterface $event)
@@ -20,7 +20,7 @@ class EventWorkflow implements WorkflowInterface
         // When an event is received - dispatch TaskB
         echo 'Event received: '. get_class($event).PHP_EOL;
         if ($event instanceof MyEvent) {
-            (new TaskA())->dispatch();
+            (new TaskC())->dispatch();
         }
     }
 

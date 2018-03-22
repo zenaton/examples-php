@@ -12,7 +12,5 @@ class SequentialWorkflow implements WorkflowInterface
         (new TaskA())->execute();
 
         (new TaskB())->execute();
-
-        (new TaskC())->execute();
     }
 }

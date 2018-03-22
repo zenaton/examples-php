@@ -11,8 +11,7 @@ class AsynchronousWorkflow implements WorkflowInterface
     {
         (new TaskA())->dispatch();
 
-        (new TaskB())->dispatch();
+        (new TaskB())->execute();
 
-        (new TaskC())->execute();
     }
 }

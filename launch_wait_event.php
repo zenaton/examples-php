@@ -6,6 +6,6 @@ $workflow = new WaitEventWorkflow();
 
 $workflow->dispatch();
 
-sleep(6);
+sleep(2);
 
 WaitEventWorkflow::whereId('MyWaitEventWorkflowExample')->send(new MyEvent());

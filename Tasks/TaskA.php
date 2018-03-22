@@ -10,7 +10,7 @@ class TaskA implements TaskInterface
     public function handle()
     {
         echo "Task A".PHP_EOL;
-        sleep(1);
+        sleep(3);
         return "Task A";
     }
 }

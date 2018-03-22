@@ -15,9 +15,5 @@ class WaitWorkflow implements WorkflowInterface
         (new Wait())->seconds(5)->execute();
 
         (new TaskB())->execute();
-
-        (new Wait())->seconds(5)->execute();
-
-        (new TaskC())->execute();
     }
 }
