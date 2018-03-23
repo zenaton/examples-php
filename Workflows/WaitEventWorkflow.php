@@ -25,6 +25,6 @@ class WaitEventWorkflow implements WorkflowInterface
 
     public function getId()
     {
-        return 'MyWaitEventWorkflowExample';
+        return 'MyId';
     }
 }

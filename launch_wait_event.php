@@ -8,4 +8,4 @@ $workflow->dispatch();
 
 sleep(2);
 
-WaitEventWorkflow::whereId('MyWaitEventWorkflowExample')->send(new MyEvent());
+WaitEventWorkflow::whereId('MyId')->send(new MyEvent());

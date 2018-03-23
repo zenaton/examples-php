@@ -18,7 +18,7 @@ class EventWorkflow implements WorkflowInterface
     public function onEvent(EventInterface $event)
     {
         if ($event instanceof MyEvent) {
-            (new TaskC())->dispatch();
+            (new TaskC())->execute();
         }
     }
 
