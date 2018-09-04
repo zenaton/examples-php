@@ -1,5 +1,6 @@
 .DS_Store
 /.env
+/.php_cs.cache
 /zenaton.err
 /zenaton.log
 /zenaton.out
