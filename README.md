@@ -49,7 +49,7 @@ Your all set!
 </p>
 
 ```php
-php launch_sequential.php
+php bin/launch_sequential.php
 ```
 
 ## Example 2: Parallel tasks execution
@@ -66,7 +66,7 @@ php launch_sequential.php
 </p>
 
 ```php
-php launch_parallel.php
+php bin/launch_parallel.php
 ```
 
 ## Example 3: Asynchronous tasks execution
@@ -83,7 +83,7 @@ php launch_parallel.php
 </p>
 
 ```php
-php launch_asynchronous.php
+php bin/launch_asynchronous.php
 ```
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
 
@@ -100,7 +100,7 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 </p>
 
 ```php
-php launch_event.php
+php bin/launch_event.php
 ```
 
 ## Example 5: Wait
@@ -116,7 +116,7 @@ php launch_event.php
 </p>
 
 ```php
-php launch_wait.php
+php bin/launch_wait.php
 ```
 
 ## Example 6: Wait Event
@@ -132,7 +132,7 @@ php launch_wait.php
 </p>
 
 ```php
-php launch_wait_event.php
+php bin/launch_wait_event.php
 ```
 
 ## Example 7: Recursive Workflow
@@ -140,7 +140,7 @@ php launch_wait_event.php
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
 ```php
-php launch_recursive.php
+php bin/launch_recursive.php
 ```
 
 ## Example 8: Workflow Versions
@@ -148,7 +148,7 @@ php launch_recursive.php
 - how to update your workflow implementation, even while previous versions are still running
 
 ```php
-php launch_version.php
+php bin/launch_version.php
 ```
 
 ## Example 9: Managing Errors
