@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__.'/../autoload.php';
+require_once __DIR__.'/../src/bootstrap.php';
 
 (new ParallelWorkflow)->dispatch();

@@ -28,7 +28,7 @@ curl https://install.zenaton.com | sh
 ```
 and start it, and make it listen to your configuration:
 ```
-zenaton start; zenaton listen --env=.env --boot=autoload.php
+zenaton start; zenaton listen --env=.env --boot=src/bootstrap.php
 ```
 Your all set!
 
