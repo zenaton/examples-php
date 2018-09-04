@@ -2,7 +2,18 @@
     "name": "zenaton/examples-php",
     "license": "Apache-2.0",
     "require": {
+        "php": ">=5.6",
         "zenaton/zenaton-php": "^0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "": [
+                "src/Events",
+                "src/Recursive",
+                "src/Tasks",
+                "src/Workflows"
+            ]
+        }
     },
     "scripts": {
         "post-install-cmd": [
