@@ -2,7 +2,16 @@
     "name": "zenaton/examples-php",
     "license": "Apache-2.0",
     "require": {
-        "zenaton/zenaton-php": "^0.2"
+        "zenaton/zenaton-php": "@dev"
+    },
+    "repositories": {
+        "dev-package": {
+            "type": "path",
+            "url": "../zenaton-php",
+            "options": {
+              "symlink": true
+            }
+        }
     },
     "scripts": {
         "post-install-cmd": [

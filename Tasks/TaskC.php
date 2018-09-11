@@ -9,8 +9,10 @@ class TaskC implements TaskInterface
 
     public function handle()
     {
-        echo "Task C".PHP_EOL;
+        echo 'Task C starts'.PHP_EOL;
         sleep(7);
-        return "Task C";
+        echo 'Task C ends'.PHP_EOL;
+
+        return 2;
     }
 }

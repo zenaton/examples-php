@@ -8,23 +8,29 @@ class WaitEventWorkflow implements WorkflowInterface
 {
     use Zenatonable;
 
+    protected $id;
+
+    public function __construct($id)
+    {
+        $this->id = $id;
+    }
+
     public function handle()
     {
-        // Wait until the event or 4 seconds
+        // Wait until the event at most 4 seconds
         $event = (new Wait(MyEvent::class))->seconds(4)->execute();
 
-        // If event has been triggered
         if ($event) {
-            // Execute TaskB
-            (new TaskA())->execute();
+            // if event has been triggered within 4 seconds
+            (new TaskA)->execute();
         } else {
-            // Execute Task B
-            (new TaskB())->execute();
+            // else
+            (new TaskB)->execute();
         }
     }
 
     public function getId()
     {
-        return 'MyId';
+        return $this->id;
     }
 }
