@@ -11,7 +11,7 @@ class TaskD implements TaskInterface
     {
         echo 'Task D starts'.PHP_EOL;
         sleep(9);
-        echo 'Task D starts'.PHP_EOL;
+        echo 'Task D ends'.PHP_EOL;
 
         return 3;
     }
