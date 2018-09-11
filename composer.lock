@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ea6fc99d0a9a2711c2235de59a4434f",
+    "content-hash": "68d8a3787689a0bebfd8c2fb7359392a",
     "packages": [
         {
             "name": "cakephp/chronos",
-            "version": "1.1.4",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/chronos.git",
-                "reference": "85bcaea6a832684b32ef54b2487b0c14a172e9e6"
+                "reference": "30f5b26bcf76a5e53ecc274700ad1ec49dc05567"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/chronos/zipball/85bcaea6a832684b32ef54b2487b0c14a172e9e6",
-                "reference": "85bcaea6a832684b32ef54b2487b0c14a172e9e6",
+                "url": "https://api.github.com/repos/cakephp/chronos/zipball/30f5b26bcf76a5e53ecc274700ad1ec49dc05567",
+                "reference": "30f5b26bcf76a5e53ecc274700ad1ec49dc05567",
                 "shasum": ""
             },
             "require": {
@@ -25,15 +25,15 @@
             },
             "require-dev": {
                 "athletic/athletic": "~0.1",
-                "cakephp/cakephp-codesniffer": "~2.3",
+                "cakephp/cakephp-codesniffer": "^3.0",
                 "phpbench/phpbench": "@dev",
                 "phpstan/phpstan": "^0.6.4",
-                "phpunit/phpunit": "<6.0"
+                "phpunit/phpunit": "<6.0 || ^7.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Cake\\Chronos\\": "src"
+                    "Cake\\Chronos\\": "src/"
                 },
                 "files": [
                     "src/carbon_compat.php"
@@ -61,24 +61,24 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-01-13T12:19:50+00:00"
+            "time": "2018-07-11T18:51:56+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeremeamia/super_closure.git",
-                "reference": "443c3df3207f176a1b41576ee2a66968a507b3db"
+                "reference": "5707d5821b30b9a07acfb4d76949784aaa0e9ce9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/443c3df3207f176a1b41576ee2a66968a507b3db",
-                "reference": "443c3df3207f176a1b41576ee2a66968a507b3db",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/5707d5821b30b9a07acfb4d76949784aaa0e9ce9",
+                "reference": "5707d5821b30b9a07acfb4d76949784aaa0e9ce9",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^1.2|^2.0|^3.0",
+                "nikic/php-parser": "^1.2|^2.0|^3.0|^4.0",
                 "php": ">=5.4",
                 "symfony/polyfill-php56": "^1.0"
             },
@@ -88,7 +88,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -119,7 +119,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2016-12-07T09:37:55+00:00"
+            "time": "2018-03-21T22:21:57+00:00"
         },
         {
             "name": "nategood/httpful",
@@ -173,24 +173,24 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.4",
+            "version": "v4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e57b3a09784f846411aa7ed664eedb73e3399078"
+                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e57b3a09784f846411aa7ed664eedb73e3399078",
-                "reference": "e57b3a09784f846411aa7ed664eedb73e3399078",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.5"
+                "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0|~5.0"
+                "phpunit/phpunit": "^6.5 || ^7.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -198,7 +198,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -220,20 +220,20 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-01-25T21:31:33+00:00"
+            "time": "2018-07-15T17:25:16+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
-            "version": "v1.7.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php56.git",
-                "reference": "ebc999ce5f14204c5150b9bd15f8f04e621409d8"
+                "reference": "7b4fc009172cc0196535b0328bd1226284a28000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/ebc999ce5f14204c5150b9bd15f8f04e621409d8",
-                "reference": "ebc999ce5f14204c5150b9bd15f8f04e621409d8",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/7b4fc009172cc0196535b0328bd1226284a28000",
+                "reference": "7b4fc009172cc0196535b0328bd1226284a28000",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -276,20 +276,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-01-30T19:27:44+00:00"
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "symfony/polyfill-util",
-            "version": "v1.7.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "e17c808ec4228026d4f5a8832afa19be85979563"
+                "reference": "8e15d04ba3440984d23e7964b2ee1d25c8de1581"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/e17c808ec4228026d4f5a8832afa19be85979563",
-                "reference": "e17c808ec4228026d4f5a8832afa19be85979563",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/8e15d04ba3440984d23e7964b2ee1d25c8de1581",
+                "reference": "8e15d04ba3440984d23e7964b2ee1d25c8de1581",
                 "shasum": ""
             },
             "require": {
@@ -298,7 +298,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -328,32 +328,32 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2018-01-31T18:08:44+00:00"
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.4.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
-                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -363,7 +363,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause-Attribution"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -378,21 +378,16 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01T10:05:43+00:00"
+            "time": "2018-07-29T20:33:41+00:00"
         },
         {
             "name": "zenaton/zenaton-php",
-            "version": "0.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "f54c0fb916006abb7e2308af6ac858aa744b7b98"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/f54c0fb916006abb7e2308af6ac858aa744b7b98",
-                "reference": "f54c0fb916006abb7e2308af6ac858aa744b7b98",
-                "shasum": ""
+                "type": "path",
+                "url": "../zenaton-php",
+                "reference": "e61ebc8f368b5911f0fd8fec61989c57f849aec6",
+                "shasum": null
             },
             "require": {
                 "cakephp/chronos": "^1.1",
@@ -411,18 +406,21 @@
                     "Zenaton\\": "src/Zenaton/v1/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2018-02-12T09:18:29+00:00"
+            "transport-options": {
+                "symlink": true
+            }
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "zenaton/zenaton-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

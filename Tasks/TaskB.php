@@ -9,8 +9,10 @@ class TaskB implements TaskInterface
 
     public function handle()
     {
-        echo "Task B".PHP_EOL;
+        echo 'Task B starts'.PHP_EOL;
         sleep(5);
-        return "Task B";
+        echo 'Task B ends'.PHP_EOL;
+
+        return 1;
     }
 }

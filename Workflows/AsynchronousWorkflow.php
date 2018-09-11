@@ -10,8 +10,8 @@ class AsynchronousWorkflow implements WorkflowInterface
     public function handle()
     {
         (new TaskA())->dispatch();
-
-        (new TaskB())->execute();
-
+        (new TaskB())->dispatch();
+        (new TaskC())->execute();
+        (new TaskD())->execute();
     }
 }
