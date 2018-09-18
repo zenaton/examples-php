@@ -9,12 +9,14 @@ class SequentialWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        $a = (new TaskA)->execute();
+        $a = (new TaskA())->execute();
 
-        if (0 === $a) {
-            (new TaskB)->execute();
+        if (0 < $a) {
+            (new TaskB())->execute();
         } else {
-            (new TaskC)->execute();
+            (new TaskC())->execute();
         }
+
+        (new TaskD())->execute();
     }
 }

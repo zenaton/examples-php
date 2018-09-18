@@ -18,12 +18,12 @@ class EventWorkflow implements WorkflowInterface
 
     public function handle()
     {
-        (new TaskA)->execute();
+        (new TaskA())->execute();
 
         if ($this->state) {
-            (new TaskB)->execute();
+            (new TaskB())->execute();
         } else {
-            (new TaskC)->execute();
+            (new TaskC())->execute();
         }
     }
 

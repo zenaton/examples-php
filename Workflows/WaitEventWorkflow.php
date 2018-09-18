@@ -22,10 +22,10 @@ class WaitEventWorkflow implements WorkflowInterface
 
         if ($event) {
             // if event has been triggered within 4 seconds
-            (new TaskA)->execute();
+            (new TaskA())->execute();
         } else {
             // else
-            (new TaskB)->execute();
+            (new TaskB())->execute();
         }
     }
 
