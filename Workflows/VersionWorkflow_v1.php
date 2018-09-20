@@ -11,9 +11,9 @@ class VersionWorkflow_v1 implements WorkflowInterface
     public function handle()
     {
         (new Parallel(
-            new TaskA(),
-            new TaskB(),
-            new TaskC()
+            new TaskA,
+            new TaskB,
+            new TaskC
         ))->execute();
     }
 }

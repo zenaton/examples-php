@@ -2,10 +2,10 @@
 
 require __DIR__.'/autoload.php';
 
-$workflow = new WaitEventWorkflow();
+$id = uniqid();
 
-$workflow->dispatch();
+(new WaitEventWorkflow($id))->dispatch();
 
 sleep(2);
 
-WaitEventWorkflow::whereId('MyId')->send(new MyEvent());
+WaitEventWorkflow::whereId($id)->send(new MyEvent());
