@@ -18,7 +18,7 @@ class TaskB implements TaskInterface
     {
         echo 'Task B starts'.PHP_EOL;
         if ($this->error) {
-            // throw new \Exception('Error in Task B');
+            throw new \Exception('Error in Task B');
         }
         sleep(5);
         echo 'Task B ends'.PHP_EOL;
