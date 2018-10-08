@@ -4,15 +4,25 @@ This repository contains examples of workflows built with Zenaton. These example
 ## Installation
 Download this repo
 ```
-git clone https://github.com/zenaton/examples-php.git
+git clone https://github.com/zenaton/examples-php.git; cd-examples-php
 ```
-and install dependencies
+
+then populate your .env file with your application id and api token found [here](https://zenaton.com/app/api).
+
+### Running on Docker
+Simply run
+```
+docker-compose build; docker-compose up
+```
+
+You're all set!
+
+### Running locally
+Install dependencies
 ```
 composer install
 ```
-then populate your .env file with your application id and api token found [here](https://zenaton.com/app/api).
-
-Then, you need to install a Zenaton worker
+then, you need to install a Zenaton worker
 ```
 curl https://install.zenaton.com | sh
 ```
