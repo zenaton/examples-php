@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "68d8a3787689a0bebfd8c2fb7359392a",
+    "content-hash": "4ea6fc99d0a9a2711c2235de59a4434f",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -173,16 +173,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
+                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
                 "shasum": ""
             },
             "require": {
@@ -220,7 +220,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-07-15T17:25:16+00:00"
+            "time": "2018-09-18T07:03:24+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -382,12 +382,17 @@
         },
         {
             "name": "zenaton/zenaton-php",
-            "version": "dev-master",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenaton/zenaton-php.git",
+                "reference": "e61ebc8f368b5911f0fd8fec61989c57f849aec6"
+            },
             "dist": {
-                "type": "path",
-                "url": "../zenaton-php",
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/e61ebc8f368b5911f0fd8fec61989c57f849aec6",
                 "reference": "e61ebc8f368b5911f0fd8fec61989c57f849aec6",
-                "shasum": null
+                "shasum": ""
             },
             "require": {
                 "cakephp/chronos": "^1.1",
@@ -406,21 +411,18 @@
                     "Zenaton\\": "src/Zenaton/v1/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "transport-options": {
-                "symlink": true
-            }
+            "time": "2018-04-04T12:27:23+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "zenaton/zenaton-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
