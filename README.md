@@ -41,7 +41,11 @@ Your all set!
 - In a sequential task execution, you can get the output of a task.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_sequential.png" alt="Sequential Workflow Diagram" />
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_sequential.png"
+        width="400px"
+        alt="Sequential Workflow Diagram"
+    />
 </p>
 
 ```php
@@ -54,7 +58,11 @@ php launch_sequential.php
 - a third task that is executed only after *both* first two tasks were processed
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_parallel.png" alt="Parallel Workflow Diagram" />
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_parallel.png"
+        width="400px"
+        alt="Parallel Workflow Diagram"
+    />
 </p>
 
 ```php
@@ -67,7 +75,11 @@ php launch_parallel.php
 - Then a sequential execution of Task B
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_async.png" alt="Asynchronous Workflow Diagram" />
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_async.png"
+        width="400px"
+        alt="Asynchronous Workflow Diagram"
+    />
 </p>
 
 ```php
@@ -80,7 +92,11 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 - how to change a workflow's behaviour based on an external event
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_react_event.png" alt="Event Workflow Diagram" />
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_react_event.png"
+        width="400px"
+        alt="Event Workflow Diagram"
+    />
 </p>
 
 ```php
@@ -92,7 +108,11 @@ php launch_event.php
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait.png" alt="Wait Workflow Diagram" />
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait.png"
+        width="400px"
+        alt="Wait Workflow Diagram"
+    />
 </p>
 
 ```php
@@ -104,7 +124,11 @@ php launch_wait.php
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait_event.png" alt="WaitEvent Workflow Diagram" />
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_wait_event.png"
+        width="400px"
+        alt="WaitEvent Workflow Diagram"
+    />
 </p>
 
 ```php
@@ -125,4 +149,21 @@ php launch_recursive.php
 
 ```php
 php launch_version.php
+```
+
+## Example 9: Managing Errors
+[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/ErrorWorkflow.php) showcases
+- how a failed task appear on Zenaton website
+- how to retry a failed task using the retry button
+
+<p align="center">
+    <img
+        src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png"
+        width="400px"
+        alt="WaitEvent Workflow Diagram"
+    />
+</p>
+
+```php
+php launch_error.php
 ```
