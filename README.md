@@ -160,7 +160,7 @@ php launch_version.php
     <img
         src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_error.png"
         width="400px"
-        alt="WaitEvent Workflow Diagram"
+        alt="Error Workflow Diagram"
     />
 </p>
 
