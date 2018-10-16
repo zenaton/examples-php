@@ -12,7 +12,7 @@ class TaskC implements TaskInterface
         echo 'Task C starts'.PHP_EOL;
 
         sleep(7);
-        
+
         echo 'Task C ends'.PHP_EOL;
 
         return 2;

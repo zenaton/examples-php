@@ -3,4 +3,4 @@
 
 require_once __DIR__.'/../src/bootstrap.php';
 
-(new VersionWorkflow)->dispatch();
+(new VersionWorkflow())->dispatch();

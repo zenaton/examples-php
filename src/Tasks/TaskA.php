@@ -12,7 +12,7 @@ class TaskA implements TaskInterface
         echo 'Task A starts'.PHP_EOL;
 
         sleep(3);
-        
+
         echo 'Task A ends'.PHP_EOL;
 
         return 0;

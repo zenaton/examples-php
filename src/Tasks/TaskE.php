@@ -10,9 +10,8 @@ class TaskE implements TaskInterface
     public function handle()
     {
         echo 'Task E starts'.PHP_EOL;
-        
+
         throw new \Exception('Error in Task E');
-    
         echo 'Task E ends'.PHP_EOL;
     }
 }
