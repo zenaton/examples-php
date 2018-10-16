@@ -152,7 +152,7 @@ php bin/launch_version.php
 ```
 
 ## Example 9: Managing Errors
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/ErrorWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/ErrorWorkflow.php) showcases
 - how a failed task appear on Zenaton website
 - how to retry a failed task using the retry button
 
@@ -165,5 +165,5 @@ php bin/launch_version.php
 </p>
 
 ```php
-php launch_error.php
+php bin/launch_error.php
 ```
