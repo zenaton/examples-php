@@ -6,6 +6,6 @@ $id = uniqid();
 
 (new EventWorkflow($id))->dispatch();
 
-sleep(4);
+sleep(2);
 
 EventWorkflow::whereId($id)->send(new MyEvent());
