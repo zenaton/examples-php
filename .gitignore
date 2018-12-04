@@ -1,6 +1,7 @@
-.env
-/vendor
 .DS_Store
-zenaton.out
-zenaton.err
-zenaton.log
+/.env
+/.php_cs.cache
+/zenaton.err
+/zenaton.log
+/zenaton.out
+/vendor/

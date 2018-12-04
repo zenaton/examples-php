@@ -28,7 +28,7 @@ curl https://install.zenaton.com | sh
 ```
 and start it, and make it listen to your configuration:
 ```
-zenaton start; zenaton listen --env=.env --boot=autoload.php
+zenaton start; zenaton listen --env=.env --boot=src/bootstrap.php
 ```
 Your all set!
 
@@ -36,7 +36,7 @@ Your all set!
 *Your workflows will be processed by your worker, so you won't see anything except the stdout and stderr, respectively `zenaton.out` and `zenaton.err`. Look at these files :)*
 
 ## Example 1 : Sequential tasks execution
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/SequentialWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/SequentialWorkflow.php) showcases
 - A sequential execution of three tasks. The second and third tasks are executed only when the previous one is processed.
 - In a sequential task execution, you can get the output of a task. The result of a task can be used by the next one.
 
@@ -49,11 +49,11 @@ Your all set!
 </p>
 
 ```php
-php launch_sequential.php
+php bin/launch_sequential.php
 ```
 
 ## Example 2: Parallel tasks execution
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/ParallelWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/ParallelWorkflow.php) showcases
 - a parallel execution of 2 tasks
 - a third task that is executed only after *both* first two tasks were processed
 
@@ -66,11 +66,11 @@ php launch_sequential.php
 </p>
 
 ```php
-php launch_parallel.php
+php bin/launch_parallel.php
 ```
 
 ## Example 3: Asynchronous tasks execution
-[this example](https://github.com/zenaton/examples-php/tree/master/Workflows/AsynchronousWorkflow.php) showcases
+[this example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/AsynchronousWorkflow.php) showcases
 - Asynchronous executions of Task A and Task B (fire and forget)
 - Then sequential executions of Task C and Task D.
 
@@ -83,12 +83,12 @@ php launch_parallel.php
 </p>
 
 ```php
-php launch_asynchronous.php
+php bin/launch_asynchronous.php
 ```
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
 
 ## Example 4: Event
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/EventWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/EventWorkflow.php) showcases
 - how to change a workflow's behaviour based on an external event
 
 <p align="center">
@@ -100,11 +100,11 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 </p>
 
 ```php
-php launch_event.php
+php bin/launch_event.php
 ```
 
 ## Example 5: Wait
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/WaitWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/WaitWorkflow.php) showcases
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
 <p align="center">
@@ -116,11 +116,11 @@ php launch_event.php
 </p>
 
 ```php
-php launch_wait.php
+php bin/launch_wait.php
 ```
 
 ## Example 6: Wait Event
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/WaitEventWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/WaitEventWorkflow.php) showcases
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
 
 <p align="center">
@@ -132,27 +132,27 @@ php launch_wait.php
 </p>
 
 ```php
-php launch_wait_event.php
+php bin/launch_wait_event.php
 ```
 
 ## Example 7: Recursive Workflow
-[This example](https://github.com/zenaton/examples-php/tree/master/Recursive) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Recursive) showcases
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
 ```php
-php launch_recursive.php
+php bin/launch_recursive.php
 ```
 
 ## Example 8: Workflow Versions
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/VersionWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/VersionWorkflow.php) showcases
 - how to update your workflow implementation, even while previous versions are still running
 
 ```php
-php launch_version.php
+php bin/launch_version.php
 ```
 
 ## Example 9: Managing Errors
-[This example](https://github.com/zenaton/examples-php/tree/master/Workflows/ErrorWorkflow.php) showcases
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Workflows/ErrorWorkflow.php) showcases
 - how a failed task appear on Zenaton website
 - how to retry a failed task using the retry button
 
@@ -165,5 +165,5 @@ php launch_version.php
 </p>
 
 ```php
-php launch_error.php
+php bin/launch_error.php
 ```

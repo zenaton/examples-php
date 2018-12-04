@@ -1,7 +1,7 @@
 <?php
 
-use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Interfaces\EventInterface;
+use Zenaton\Interfaces\WorkflowInterface;
 use Zenaton\Traits\Zenatonable;
 
 class EventWorkflow implements WorkflowInterface
