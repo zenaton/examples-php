@@ -3,6 +3,6 @@
 set -e
 
 zenaton start
-zenaton listen --boot=autoload.php
+zenaton listen --boot=src/bootstrap.php
 
 tail -f zenaton.out
