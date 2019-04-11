@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ea6fc99d0a9a2711c2235de59a4434f",
+    "content-hash": "32977cf574f0213585d43c6f6b4a7ec6",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -382,29 +382,34 @@
         },
         {
             "name": "zenaton/zenaton-php",
-            "version": "0.2.4",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zenaton/zenaton-php.git",
-                "reference": "e61ebc8f368b5911f0fd8fec61989c57f849aec6"
+                "reference": "8ac1d10431638f099baba128f3031b55085cc3f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/e61ebc8f368b5911f0fd8fec61989c57f849aec6",
-                "reference": "e61ebc8f368b5911f0fd8fec61989c57f849aec6",
+                "url": "https://api.github.com/repos/zenaton/zenaton-php/zipball/8ac1d10431638f099baba128f3031b55085cc3f3",
+                "reference": "8ac1d10431638f099baba128f3031b55085cc3f3",
                 "shasum": ""
             },
             "require": {
                 "cakephp/chronos": "^1.1",
-                "jeremeamia/superclosure": "^2.0",
+                "jeremeamia/superclosure": "^2.2",
                 "nategood/httpful": "^0.2",
                 "php": ">=5.6.0",
                 "vlucas/phpdotenv": "^2.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^5.7.27"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Zenaton\\Exceptions\\": "src/Zenaton/Exceptions/",
@@ -416,7 +421,8 @@
                 "Apache-2.0"
             ],
             "description": "Zenaton PHP library",
-            "time": "2018-04-04T12:27:23+00:00"
+            "homepage": "https://zenaton.com",
+            "time": "2019-03-29T13:23:51+00:00"
         }
     ],
     "packages-dev": [],
@@ -425,6 +431,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.6"
+    },
     "platform-dev": []
 }
