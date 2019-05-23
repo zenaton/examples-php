@@ -1,16 +1,34 @@
+<p align="center">
+  <a href="https://zenaton.com" target="_blank">
+    <img src="https://user-images.githubusercontent.com/36400935/58254828-e5176880-7d6b-11e9-9094-3f46d91faeee.png" target="_blank" />
+  </a><br>
+  Easy Asynchronous Jobs Manager for Developers <br>
+  <a href="https://zenaton.com/documentation/php/getting-started/" target="_blank">
+    <strong> Explore the docs » </strong>
+  </a><br>
+  <a href="https://zenaton.com" target="_blank"> Website </a>
+    ·
+  <a href="https://github.com/zenaton/zenaton-php" target="_blank"> PHP Library </a>
+    ·
+  <a href="https://app.zenaton.com/tutorial/php" target="_blank"> Tutorial in PHP </a> <br>
+</p>
+
 # Zenaton examples for PHP
+
+[Zenaton](https://zenaton.com) helps developers to easily run, monitor and orchestrate background jobs on your workers without managing a queuing system.
+In addition to this, a monitoring dashboard shows you in real-time tasks executions and helps you to handle errors.
 
 This repository contains examples of workflows built with Zenaton. These examples illustrates how Zenaton orchestrates tasks that are executed on different workers.
 
 ## Installation
 
-Download this repo
+Clone this repository
 
 ```sh
-git clone https://github.com/zenaton/examples-php.git; cd-examples-php
+git clone https://github.com/zenaton/examples-php.git; cd examples-php
 ```
 
-then populate your .env file with your application id and api token found [here](https://zenaton.com/app/api).
+Then, populate your `.env` file with your application id and api token found [here](https://app.zenaton.com/api).
 
 ### Running on Docker
 
@@ -21,6 +39,18 @@ docker-compose build; docker-compose up
 ```
 
 You're all set!
+
+While going through the next sections, you will see you have to run examples using commands like the following:
+
+```sh
+php bin/launch_sequential.php
+```
+
+When using the docker setup, you can run PHP inside the container using the following command instead:
+
+```sh
+docker-compose exec php bin/launch_sequential.php
+```
 
 ### Running locally
 
