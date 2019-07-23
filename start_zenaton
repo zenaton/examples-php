@@ -5,4 +5,5 @@ set -e
 zenaton start
 zenaton listen --boot=src/bootstrap.php
 
+touch zenaton.out
 tail -f zenaton.out
