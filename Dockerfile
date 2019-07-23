@@ -1,4 +1,4 @@
-FROM composer/composer
+FROM composer
 
 WORKDIR /app
 
