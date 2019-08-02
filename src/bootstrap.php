@@ -12,19 +12,19 @@ if (!class_exists('Zenaton\Client')) {
 
 $appId = getenv('ZENATON_APP_ID');
 if (!$appId) {
-    echo "Please add ZENATON_APP_ID=... in your '.env' file (https://zenaton.com/app/api)";
+    echo "Please add ZENATON_APP_ID=... in your '.env' file (https://app.zenaton.com/api)";
     die(1);
 }
 
 $apiToken = getenv('ZENATON_API_TOKEN');
 if (!$apiToken) {
-    echo "Please add ZENATON_API_TOKEN=... in your '.env' file (https://zenaton.com/app/api)";
+    echo "Please add ZENATON_API_TOKEN=... in your '.env' file (https://app.zenaton.com/api)";
     die(1);
 }
 
 $appEnv = getenv('ZENATON_APP_ENV');
 if (!$appEnv) {
-    echo "Please add ZENATON_APP_ENV=... in your '.env' file (https://zenaton.com/app/api)";
+    echo "Please add ZENATON_APP_ENV=... in your '.env' file (https://app.zenaton.com/api)";
     die(1);
 }
 
