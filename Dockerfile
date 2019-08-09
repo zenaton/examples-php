@@ -13,7 +13,7 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 COPY ./bin /app/bin
 COPY ./src /app/src
 COPY ./start_zenaton /app/start_zenaton
-ADD composer.json composer.lock ./
+COPY composer.json composer.lock ./
 
 RUN composer install
 
