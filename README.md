@@ -28,13 +28,13 @@ Clone this repository
 git clone https://github.com/zenaton/examples-php.git; cd examples-php
 ```
 
-Then, populate your `.env` file with your application id and api token found [here](https://app.zenaton.com/api).
-
 Then Install dependencies
 
 ```sh
 composer install
 ```
+
+Then, populate your `.env` file with your application id and api token found [here](https://app.zenaton.com/api).
 
 ### Running on Docker
 
