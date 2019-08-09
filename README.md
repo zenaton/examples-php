@@ -44,6 +44,8 @@ Simply run
 docker-compose build; docker-compose up
 ```
 
+You can check that your agent is running [here](https://app.zenaton.com/agents).
+
 You're all set!
 
 While going through the next sections, you will see you have to run examples using commands like the following:
