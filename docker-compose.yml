@@ -6,3 +6,5 @@ services:
       - .:/app
     ports:
       - "4001:4001"
+    env_file:
+      - .env

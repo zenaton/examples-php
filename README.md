@@ -28,6 +28,12 @@ Clone this repository
 git clone https://github.com/zenaton/examples-php.git; cd examples-php
 ```
 
+Then Install dependencies
+
+```sh
+composer install
+```
+
 Then, populate your `.env` file with your application id and api token found [here](https://app.zenaton.com/api).
 
 ### Running on Docker
@@ -37,6 +43,8 @@ Simply run
 ```sh
 docker-compose build; docker-compose up
 ```
+
+You can check that your agent is running [here](https://app.zenaton.com/agents).
 
 You're all set!
 
@@ -49,18 +57,12 @@ php bin/launch_sequential.php
 When using the docker setup, you can run PHP inside the container using the following command instead:
 
 ```sh
-docker-compose exec php bin/launch_sequential.php
+docker-compose exec app bin/launch_sequential.php
 ```
 
 ### Running locally
 
-Install dependencies
-
-```sh
-composer install
-```
-
-Then, you need to install a Zenaton worker
+Install a Zenaton worker
 
 ```sh
 curl https://install.zenaton.com | sh

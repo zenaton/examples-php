@@ -8,7 +8,9 @@ if (!class_exists('Zenaton\Client')) {
 }
 
 // load .env file
-(new Dotenv\Dotenv(realpath(__DIR__.'/..')))->overload();
+if (file_exists(__DIR__.'/../.env')) {
+    (new Dotenv\Dotenv(realpath(__DIR__.'/..')))->overload();
+}
 
 $appId = getenv('ZENATON_APP_ID');
 if (!$appId) {
