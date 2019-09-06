@@ -256,3 +256,12 @@ php bin/launch_error.php
 ```sh
 php bin/launch_automatic_retry.php
 ```
+
+## Example 12: Schedule a task
+
+[This example](https://github.com/zenaton/examples-php/tree/master/bin/schedule_task_a.php) showcases
+- how to schedule a task to make it run periodically
+
+```php
+php bin/schedule_task_a.php
+```
