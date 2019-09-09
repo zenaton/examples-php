@@ -247,3 +247,23 @@ php bin/launch_version.php
 ```sh
 php bin/launch_error.php
 ```
+
+## Example 11: Automatic retry of failed tasks
+
+[This example](https://github.com/zenaton/examples-php/tree/master/src/Tasks/TaskWithRetry.php) showcases
+
+- how a failed task can be retried automatically
+- how to customize the automatic retry policy
+
+```sh
+php bin/launch_automatic_retry.php
+```
+
+## Example 12: Schedule a task
+
+[This example](https://github.com/zenaton/examples-php/tree/master/bin/schedule_task_a.php) showcases
+- how to schedule a task to make it run periodically
+
+```php
+php bin/schedule_task_a.php
+```
